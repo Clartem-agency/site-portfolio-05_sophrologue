@@ -43,8 +43,29 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 .btn-ghost { display: inline-flex; align-items: center; justify-content: center; color: #2c353d; font-weight: 500; border-radius: 0.625rem; padding: 0.6rem 1.5rem; transition: all 0.3s ease; }
 .btn-ghost:hover { color: #567c8f; background: rgba(86,124,143,0.06); }
 
+
 /* ---- HERO + PARALLAX ---- */
-.hero-overlay { background: linear-gradient(to bottom, rgba(251,250,249,0.72) 0%, rgba(251,250,249,0.60) 50%, rgba(251,250,249,0.85) 100%); }
+/* Focus sur la droite (le visage) sur mobile, puis centrage progressif sur grand écran */
+.hero-bg-image {
+    background-size: cover;
+    background-position: 80% center; 
+}
+@media (min-width: 768px) {
+    .hero-bg-image { background-position: 70% center; }
+}
+@media (min-width: 1024px) {
+    .hero-bg-image { background-position: center center; }
+}
+
+/* Filtre allégé au centre (0.25 au lieu de 0.60) pour mieux voir le visage, 
+   et opaque en bas (0.95) pour la fusion avec la vague */
+.hero-overlay { 
+    background: linear-gradient(to bottom, rgba(251,250,249,0.45) 0%, rgba(251,250,249,0.25) 50%, rgba(251,250,249,0.95) 100%); 
+}
+
+
+
+
 .reveal-hero { opacity: 0; transform: translateY(25px); animation: heroReveal 0.8s cubic-bezier(0.25,0.46,0.45,0.94) forwards; animation-delay: var(--delay, 0s); }
 @keyframes heroReveal { to { opacity: 1; transform: translateY(0); } }
 
