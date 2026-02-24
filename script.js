@@ -93,7 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 function step(timestamp) {
                     if (!startTime) startTime = timestamp;
                     var progress = Math.min((timestamp - startTime) / duration, 1);
-                    // Ease out cubic
                     var eased = 1 - Math.pow(1 - progress, 3);
                     el.textContent = Math.floor(eased * target);
                     if (progress < 1) {
@@ -108,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (counters.length) {
         window.addEventListener('scroll', animateCounters, { passive: true });
-        animateCounters(); // check immediately
+        animateCounters();
     }
 
     // 7. FLOATING CTA (mobile)
@@ -198,7 +197,23 @@ document.addEventListener('DOMContentLoaded', function () {
         render();
     }
 
-    // 9. SCROLL REVEAL
+    // 9. SHOWCASE CARDS TOGGLE
+    var showcaseCards = document.querySelectorAll('.showcase-card');
+    showcaseCards.forEach(function(card) {
+        var toggle = card.querySelector('.showcase-toggle');
+        if (!toggle) return;
+        toggle.addEventListener('click', function() {
+            var isExpanded = card.classList.contains('is-expanded');
+            card.classList.toggle('is-expanded', !isExpanded);
+            toggle.setAttribute('aria-expanded', String(!isExpanded));
+            var textEl = toggle.querySelector('.showcase-toggle-text');
+            if (textEl) {
+                textEl.textContent = isExpanded ? 'En savoir plus' : 'Réduire';
+            }
+        });
+    });
+
+    // 10. SCROLL REVEAL
     if (typeof ScrollReveal !== 'undefined') {
         var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         if (!reduced) {
@@ -209,6 +224,34 @@ document.addEventListener('DOMContentLoaded', function () {
             sr.reveal('.reveal-card', { origin: 'bottom', distance: '30px', interval: 120 });
             sr.reveal('.reveal-faq', { origin: 'bottom', distance: '20px', interval: 80 });
         }
+    }
+
+    // 11. TIMELINE CHAPTER HIGHLIGHT (IntersectionObserver)
+    var chapters = document.querySelectorAll('.timeline-chapter');
+    if (chapters.length && 'IntersectionObserver' in window) {
+        // Initially activate all on mobile (no sticky), activate first on desktop
+        function activateChapter(target) {
+            chapters.forEach(function(ch) { ch.classList.remove('is-active'); });
+            target.classList.add('is-active');
+        }
+        if (window.innerWidth >= 1024) {
+            var chapterObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        activateChapter(entry.target);
+                    }
+                });
+            }, { rootMargin: '-30% 0px -50% 0px', threshold: 0 });
+            chapters.forEach(function(ch) { chapterObserver.observe(ch); });
+            // Default: activate first
+            chapters[0].classList.add('is-active');
+        } else {
+            // On mobile, all chapters are fully visible
+            chapters.forEach(function(ch) { ch.classList.add('is-active'); });
+        }
+    } else {
+        // Fallback: all active
+        chapters.forEach(function(ch) { ch.classList.add('is-active'); });
     }
 
 });
