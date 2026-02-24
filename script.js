@@ -226,6 +226,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // 10b. APPROACH TIMELINE STEP REVEAL (IntersectionObserver)
+    var approachSteps = document.querySelectorAll('.reveal-step');
+    if (approachSteps.length && 'IntersectionObserver' in window) {
+        var stepObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    stepObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+        approachSteps.forEach(function(s) { stepObserver.observe(s); });
+    } else {
+        approachSteps.forEach(function(s) { s.classList.add('is-visible'); });
+    }
+
     // 11. TIMELINE CHAPTER HIGHLIGHT (IntersectionObserver)
     var chapters = document.querySelectorAll('.timeline-chapter');
     if (chapters.length && 'IntersectionObserver' in window) {

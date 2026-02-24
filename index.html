@@ -25,13 +25,14 @@
                     colors: {
                         background: '#fbfaf9',
                         foreground: '#2c353d',
-                        primary: { DEFAULT: '#567c8f', dark: '#456672', light: '#6a95a8', foreground: '#ffffff' },
-                        muted: { DEFAULT: '#f3f0e0', foreground: '#73808c' },
+                        primary: { DEFAULT: '#4a7d96', dark: '#3a6a80', light: '#5e94ae', foreground: '#ffffff' },
+                        muted: { DEFAULT: '#f3f0e0', foreground: '#6b7a86' },
                         card: { DEFAULT: '#ffffff', foreground: '#2c353d' },
-                        border: '#e2e6e8',
-                        sage: { light: '#fbf9f3', DEFAULT: '#70a993', dark: '#5a9079' },
-                        warm: '#f7f4ee',
-                        ocean: { light: '#eef3f6', DEFAULT: '#dce8ed', dark: '#c9dae3' },
+                        border: '#dce2e5',
+                        sage: { light: '#f5faf6', DEFAULT: '#5da88e', dark: '#4d9279' },
+                        warm: '#f5f0e5',
+                        ocean: { light: '#eaf1f5', DEFAULT: '#d6e5ed', dark: '#c2d6e2' },
+                        gold: { DEFAULT: '#c9a84c', light: '#d4b86a', dark: '#b8963f' },
                     },
                 }
             }
@@ -95,9 +96,11 @@
                         style="background-image: url('images/hero-background.webp');"></div>
                     <div class="absolute inset-0 hero-overlay"></div>
                 </div>
-                <div class="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-primary/8 rounded-full blur-3xl pointer-events-none">
                 </div>
-                <div class="absolute bottom-20 right-10 w-96 h-96 bg-sage/5 rounded-full blur-3xl pointer-events-none">
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-sage/8 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div class="absolute top-1/3 right-1/4 w-48 h-48 bg-gold/6 rounded-full blur-3xl pointer-events-none">
                 </div>
                 <div class="relative z-10 container mx-auto text-center px-5">
 
@@ -114,8 +117,8 @@
                         <!-- 2. Taille du titre ajustée (text-7xl sur laptop, text-8xl uniquement sur très grand écran 2xl) -->
                         <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl font-bold text-foreground mb-6 2xl:mb-8 leading-[1.08] tracking-tight reveal-hero"
                             style="--delay:0.25s">
-                            Retrouvez<br><span class="text-primary italic">Calme</span> et <span
-                                class="text-primary italic">Clarté</span> au Quotidien
+                            Retrouvez<br><span class="hero-gradient-text italic">Calme</span> et <span
+                                class="hero-gradient-text italic">Clarté</span> au Quotidien
                         </h1>
 
                         <!-- 3. Marges du paragraphe réduites -->
@@ -136,6 +139,17 @@
                                     <path d="m6 9 6 6 6-6" />
                                 </svg></a>
                         </div>
+
+                        <!-- Trust indicators integrated in hero -->
+                        <div class="hero-trust-bar reveal-hero" style="--delay:0.7s">
+                            <span class="hero-trust-item">Certifiée RNCP Niveau 5</span>
+                            <span class="hero-trust-sep" aria-hidden="true"></span>
+                            <span class="hero-trust-item">Institut de Sophrologie de Lyon</span>
+                            <span class="hero-trust-sep" aria-hidden="true"></span>
+                            <span class="hero-trust-item">Chambre Syndicale de la Sophrologie</span>
+                            <span class="hero-trust-sep hidden sm:inline-block" aria-hidden="true"></span>
+                            <span class="hero-trust-item hidden sm:inline">15 ans d'expérience en entreprise</span>
+                        </div>
                     </div>
 
                 </div>
@@ -144,59 +158,7 @@
                 </div>
             </section>
 
-            <!-- TRUST BANNER (static badges) -->
-            <section class="trust-banner-section relative py-10 md:py-12">
-                <div class="container mx-auto px-5">
-                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 md:gap-x-10">
-                        <span class="trust-badge">
-                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                    <path d="m9 11 3 3L22 4" />
-                                </svg></span>
-                            <span>Certifiée RNCP Niveau 5</span>
-                        </span>
-                        <span class="trust-badge">
-                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                                </svg></span>
-                            <span>Institut de Sophrologie de Lyon</span>
-                        </span>
-                        <span class="trust-badge">
-                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg></span>
-                            <span>Chambre Syndicale de la Sophrologie</span>
-                        </span>
-                        <span class="trust-badge">
-                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-                                </svg></span>
-                            <span>Supervision et éthique professionnelle</span>
-                        </span>
-                        <span class="trust-badge">
-                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="8" r="6" />
-                                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
-                                </svg></span>
-                            <span>15 ans d'expérience en entreprise</span>
-                        </span>
-                    </div>
-                </div>
-            </section>
+
 
             <!-- ABOUT — Sticky Scroll + Timeline -->
             <section id="about" class="about-section bg-warm relative">
@@ -207,7 +169,7 @@
                         <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Mon
                             Parcours</span>
                         <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">Mon Chemin
-                            vers la <span class="text-primary">Sérénité</span></h2>
+                            vers la <span class="section-gradient-text">Sérénité</span></h2>
                     </div>
 
                     <!-- Sticky Scroll Layout -->
@@ -364,22 +326,27 @@
             </section>
 
             <!-- SERVICES — Showcase Cards -->
-            <section id="services" class="py-20 md:py-28 overflow-hidden">
-                <div class="container mx-auto px-5">
+            <section id="services" class="services-section py-20 md:py-28 overflow-hidden relative">
+                <div class="services-bg"></div>
+                <!-- Decorative shapes -->
+                <svg class="section-deco section-deco-topleft" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="0.5"/></svg>
+                <svg class="section-deco section-deco-bottomright" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="M30,100 Q100,20 170,100 Q100,180 30,100Z" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+                <div class="container mx-auto px-5 relative z-10">
                     <div class="text-center mb-16 md:mb-20 reveal-up">
                         <span
                             class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Accompagnements</span>
                         <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Mes
-                            Accompagnements,<br>Votre <span class="text-primary">Mieux-Être</span></h2>
+                            Accompagnements,<br>Votre <span class="section-gradient-text">Mieux-Être</span></h2>
                     </div>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
 
                         <!-- Card 1: Clarté -->
                         <div class="showcase-card reveal-card">
+                            <div class="service-card-accent service-card-accent-sage"></div>
                             <div class="showcase-card-inner">
-                                <!-- Compact Header -->
-                                <div class="showcase-header">
-                                    <div class="service-icon-wrap">
+                                <!-- Icon -->
+                                <div class="showcase-icon-row">
+                                    <div class="service-icon-wrap service-icon-sage">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round" class="text-white">
@@ -387,13 +354,17 @@
                                             <polyline points="12 6 12 12 16 14" />
                                         </svg>
                                     </div>
-                                    <div class="flex items-baseline gap-3">
-                                        <span class="text-3xl font-serif font-bold text-primary">70€</span>
-                                        <span class="text-sm text-muted-foreground">· 1h15</span>
-                                    </div>
                                 </div>
-                                <h3 class="text-xl font-semibold text-foreground mb-1">Séance "Clarté"</h3>
-                                <p class="text-sm text-muted-foreground mb-4">Première Rencontre</p>
+                                <!-- Price block -->
+                                <div class="showcase-price-block">
+                                    <span class="showcase-price">70€</span>
+                                    <span class="showcase-price-detail">· 1h15</span>
+                                </div>
+                                <!-- Divider -->
+                                <div class="showcase-divider"></div>
+                                <!-- Title & content -->
+                                <h3 class="showcase-title">Séance "Clarté"</h3>
+                                <p class="showcase-subtitle">Première Rencontre</p>
                                 <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Ce premier
                                     rendez-vous est un temps d'échange privilégié pour faire le point sur votre
                                     situation, sans jugement.</p>
@@ -421,16 +392,18 @@
                                 </div>
 
                                 <!-- Toggle + CTA -->
-                                <button class="showcase-toggle" aria-expanded="false">
-                                    <span class="showcase-toggle-text">En savoir plus</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="showcase-toggle-icon">
-                                        <path d="m6 9 6 6 6-6" />
-                                    </svg>
-                                </button>
-                                <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Réserver ma séance
-                                    "Clarté"</a>
+                                <div class="showcase-actions">
+                                    <button class="showcase-toggle" aria-expanded="false">
+                                        <span class="showcase-toggle-text">En savoir plus</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="showcase-toggle-icon">
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </button>
+                                    <a href="#contact" class="btn-primary w-full text-sm py-2.5">Réserver ma séance
+                                        "Clarté"</a>
+                                </div>
                             </div>
                         </div>
 
@@ -438,8 +411,8 @@
                         <div class="showcase-card showcase-featured reveal-card">
                             <div class="service-card-accent"></div>
                             <div class="showcase-card-inner">
-                                <!-- Compact Header -->
-                                <div class="showcase-header">
+                                <!-- Icon + Badge -->
+                                <div class="showcase-icon-row">
                                     <div class="service-icon-wrap">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -450,14 +423,18 @@
                                             <path d="M3 10h18" />
                                         </svg>
                                     </div>
-                                    <span class="showcase-popular-badge">Populaire</span>
+                                    <span class="showcase-popular-badge showcase-badge-gold">Populaire</span>
                                 </div>
-                                <h3 class="text-xl font-semibold text-foreground mb-1">Accompagnement "Sérénité"</h3>
-                                <p class="text-sm text-muted-foreground mb-4">Le Parcours</p>
-                                <div class="flex items-baseline gap-3 mb-4">
-                                    <span class="text-3xl font-serif font-bold text-primary">Forfait 300€</span>
-                                    <span class="text-sm text-muted-foreground">· 5 séances</span>
+                                <!-- Price block -->
+                                <div class="showcase-price-block">
+                                    <span class="showcase-price">Forfait 300€</span>
+                                    <span class="showcase-price-detail">· 5 séances</span>
                                 </div>
+                                <!-- Divider -->
+                                <div class="showcase-divider"></div>
+                                <!-- Title & content -->
+                                <h3 class="showcase-title">Accompagnement "Sérénité"</h3>
+                                <p class="showcase-subtitle">Le Parcours</p>
                                 <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Un parcours
                                     sur-mesure pour intégrer durablement les bienfaits de la sophrologie dans votre vie.
                                 </p>
@@ -485,25 +462,28 @@
                                 </div>
 
                                 <!-- Toggle + CTA -->
-                                <button class="showcase-toggle" aria-expanded="false">
-                                    <span class="showcase-toggle-text">En savoir plus</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="showcase-toggle-icon">
-                                        <path d="m6 9 6 6 6-6" />
-                                    </svg>
-                                </button>
-                                <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Commencer mon
-                                    parcours</a>
+                                <div class="showcase-actions">
+                                    <button class="showcase-toggle" aria-expanded="false">
+                                        <span class="showcase-toggle-text">En savoir plus</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="showcase-toggle-icon">
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </button>
+                                    <a href="#contact" class="btn-primary w-full text-sm py-2.5">Commencer mon
+                                        parcours</a>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Card 3: Pause Sophro -->
                         <div class="showcase-card reveal-card">
+                            <div class="service-card-accent service-card-accent-gold"></div>
                             <div class="showcase-card-inner">
-                                <!-- Compact Header -->
-                                <div class="showcase-header">
-                                    <div class="service-icon-wrap">
+                                <!-- Icon -->
+                                <div class="showcase-icon-row">
+                                    <div class="service-icon-wrap service-icon-gold">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round" class="text-white">
@@ -513,13 +493,17 @@
                                             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                                         </svg>
                                     </div>
-                                    <div class="flex items-baseline gap-3">
-                                        <span class="text-3xl font-serif font-bold text-primary">Sur Devis</span>
-                                        <span class="text-sm text-muted-foreground">· Variable</span>
-                                    </div>
                                 </div>
-                                <h3 class="text-xl font-semibold text-foreground mb-1">Atelier "Pause Sophro"</h3>
-                                <p class="text-sm text-muted-foreground mb-4">En Entreprise</p>
+                                <!-- Price block -->
+                                <div class="showcase-price-block">
+                                    <span class="showcase-price">Sur Devis</span>
+                                    <span class="showcase-price-detail">· Variable</span>
+                                </div>
+                                <!-- Divider -->
+                                <div class="showcase-divider"></div>
+                                <!-- Title & content -->
+                                <h3 class="showcase-title">Atelier "Pause Sophro"</h3>
+                                <p class="showcase-subtitle">En Entreprise</p>
                                 <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Proposez à vos
                                     équipes une bulle de décompression pour mieux gérer le stress et améliorer leur
                                     concentration.</p>
@@ -546,15 +530,17 @@
                                 </div>
 
                                 <!-- Toggle + CTA -->
-                                <button class="showcase-toggle" aria-expanded="false">
-                                    <span class="showcase-toggle-text">En savoir plus</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="showcase-toggle-icon">
-                                        <path d="m6 9 6 6 6-6" />
-                                    </svg>
-                                </button>
-                                <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Demander un devis</a>
+                                <div class="showcase-actions">
+                                    <button class="showcase-toggle" aria-expanded="false">
+                                        <span class="showcase-toggle-text">En savoir plus</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="showcase-toggle-icon">
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </button>
+                                    <a href="#contact" class="btn-primary w-full text-sm py-2.5">Demander un devis</a>
+                                </div>
                             </div>
                         </div>
 
@@ -563,97 +549,98 @@
             </section>
 
             <!-- APPROACH -->
-            <section id="approach" class="py-20 md:py-28 approach-section overflow-hidden relative">
+            <section id="approach" class="approach-section overflow-hidden relative">
+                <div class="approach-glow-left"></div>
                 <div class="section-grain"></div>
-                <div class="container mx-auto px-5 relative">
-                    <div class="text-center mb-16 md:mb-20 reveal-up">
-                        <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Mon
-                            Approche</span>
-                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Comment
-                            je vous accompagne,<br><span class="text-primary">pas à pas</span></h2>
-                        <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Chaque accompagnement
-                            est unique, car vous êtes unique. Cependant, pour que vous vous sentiez en parfaite
-                            sécurité, nos rencontres suivent un cadre bienveillant et structuré. Voici les grandes
-                            étapes de notre chemin ensemble.</p>
+                <div class="approach-container relative">
+
+                    <!-- Header -->
+                    <div class="text-center approach-header reveal-up">
+                        <div class="approach-tag">Mon Approche</div>
+                        <h2 class="font-serif approach-title">
+                            Comment je vous accompagne,<br><em class="section-gradient-text italic">pas à pas</em>
+                        </h2>
+                        <p class="approach-intro">Chaque accompagnement est unique, car vous êtes unique. Cependant,
+                            pour que vous vous sentiez en parfaite sécurité, nos rencontres suivent un cadre
+                            bienveillant et structuré. Voici les grandes étapes de notre chemin ensemble.</p>
                     </div>
-                    <div class="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
-                        <div class="hidden md:block absolute top-24 left-[20%] right-[20%] h-px approach-line"></div>
-                        <div class="approach-card reveal-card">
-                            <div class="relative z-10 text-center">
-                                <div class="relative w-20 h-20 mx-auto mb-6">
-                                    <div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div>
-                                    <div
-                                        class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" />
-                                            <path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" />
-                                        </svg>
-                                    </div>
-                                    <div
-                                        class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
-                                        1</div>
+
+                    <!-- Timeline -->
+                    <div class="approach-timeline">
+                        <div class="timeline-spine" aria-hidden="true"></div>
+
+                        <!-- Step 1 — left -->
+                        <div class="approach-step reveal-step">
+                            <div class="step-card">
+                                <div class="step-icon step-icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" />
+                                        <path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" />
+                                    </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-foreground mb-4">Un Temps d'Écoute &amp; de Clarté
-                                </h3>
-                                <p class="text-muted-foreground leading-relaxed text-sm">Notre séance débute toujours
-                                    par un échange confidentiel pour que vous puissiez déposer ce qui est présent pour
-                                    vous. Cet instant précieux nous permet de définir ensemble l'intention de notre
-                                    rencontre et d'ajuster la pratique à vos besoins du moment.</p>
+                                <span class="step-tag">Étape 1</span>
+                                <h3 class="font-serif step-card-title">Un Temps d'Écoute &amp; de Clarté</h3>
+                                <p class="step-card-text">Notre séance débute toujours par un échange confidentiel
+                                    pour que vous puissiez déposer ce qui est présent pour vous. Cet instant précieux
+                                    nous permet de définir ensemble l'intention de notre rencontre et d'ajuster la
+                                    pratique à vos besoins du moment.</p>
+                            </div>
+                            <div class="step-node" aria-hidden="true">
+                                <div class="step-node-circle font-serif">1</div>
+                            </div>
+                            <div class="step-spacer"></div>
+                        </div>
+
+                        <!-- Step 2 — right -->
+                        <div class="approach-step reveal-step">
+                            <div class="step-spacer"></div>
+                            <div class="step-node" aria-hidden="true">
+                                <div class="step-node-circle font-serif">2</div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-icon step-icon-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                    </svg>
+                                </div>
+                                <span class="step-tag">Étape 2</span>
+                                <h3 class="font-serif step-card-title">Le Cœur de la Pratique Guidée</h3>
+                                <p class="step-card-text">Confortablement installée, je vous guide par ma voix à
+                                    travers des exercices de respiration, de détente musculaire et de visualisation
+                                    positive. Vous n'avez rien à "réussir", simplement à vous laisser porter et à
+                                    accueillir vos ressentis, en toute sécurité.</p>
                             </div>
                         </div>
-                        <div class="approach-card reveal-card">
-                            <div class="relative z-10 text-center">
-                                <div class="relative w-20 h-20 mx-auto mb-6">
-                                    <div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div>
-                                    <div
-                                        class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path
-                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                                        </svg>
-                                    </div>
-                                    <div
-                                        class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
-                                        2</div>
+
+                        <!-- Step 3 — left -->
+                        <div class="approach-step reveal-step">
+                            <div class="step-card">
+                                <div class="step-icon step-icon-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                                        <path d="M9 18h6" />
+                                        <path d="M10 22h4" />
+                                    </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold text-foreground mb-4">Le Cœur de la Pratique Guidée
-                                </h3>
-                                <p class="text-muted-foreground leading-relaxed text-sm">Confortablement installée, je
-                                    vous guide par ma voix à travers des exercices de respiration, de détente musculaire
-                                    et de visualisation positive. Vous n'avez rien à "réussir", simplement à vous
-                                    laisser porter et à accueillir vos ressentis, en toute sécurité.</p>
+                                <span class="step-tag">Étape 3</span>
+                                <h3 class="font-serif step-card-title">L'Intégration &amp; Vos Outils pour Demain</h3>
+                                <p class="step-card-text">Nous terminons par un court partage pour intégrer les
+                                    bienfaits de la séance. L'objectif est que vous repartiez non seulement apaisée,
+                                    mais aussi avec une ou deux clés concrètes à intégrer facilement dans votre
+                                    quotidien pour cultiver cet état de bien-être.</p>
                             </div>
-                        </div>
-                        <div class="approach-card reveal-card">
-                            <div class="relative z-10 text-center">
-                                <div class="relative w-20 h-20 mx-auto mb-6">
-                                    <div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div>
-                                    <div
-                                        class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path
-                                                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
-                                            <path d="M9 18h6" />
-                                            <path d="M10 22h4" />
-                                        </svg>
-                                    </div>
-                                    <div
-                                        class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
-                                        3</div>
-                                </div>
-                                <h3 class="text-xl font-semibold text-foreground mb-4">L'Intégration &amp; Vos Outils
-                                    pour Demain</h3>
-                                <p class="text-muted-foreground leading-relaxed text-sm">Nous terminons par un court
-                                    partage pour intégrer les bienfaits de la séance. L'objectif est que vous repartiez
-                                    non seulement apaisée, mais aussi avec une ou deux clés concrètes à intégrer
-                                    facilement dans votre quotidien pour cultiver cet état de bien-être.</p>
+                            <div class="step-node" aria-hidden="true">
+                                <div class="step-node-circle font-serif">3</div>
                             </div>
+                            <div class="step-spacer"></div>
                         </div>
                     </div>
                 </div>
@@ -661,12 +648,14 @@
 
             <!-- TESTIMONIALS — ocean colored section -->
             <section id="testimonials" class="testimonials-section py-20 md:py-28 overflow-hidden relative">
+                <!-- Decorative shapes -->
+                <svg class="section-deco section-deco-topright" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="120" fill="none" stroke="currentColor" stroke-width="0.8"/><circle cx="150" cy="150" r="80" fill="none" stroke="currentColor" stroke-width="0.5"/><circle cx="150" cy="150" r="40" fill="none" stroke="currentColor" stroke-width="0.3"/></svg>
                 <div class="container mx-auto px-5 relative z-10">
                     <div class="text-center mb-16 md:mb-20 reveal-up">
                         <span
                             class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Témoignages</span>
                         <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Ce
-                            qu'elles <span class="text-primary">en disent</span></h2>
+                            qu'elles <span class="section-gradient-text">en disent</span></h2>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                         <div class="testimonial-card reveal-card">
@@ -804,12 +793,13 @@
             </section>
 
             <!-- FAQ -->
-            <section id="faq" class="py-20 md:py-28 overflow-hidden">
-                <div class="container mx-auto px-5">
+            <section id="faq" class="faq-section py-20 md:py-28 overflow-hidden relative">
+                <div class="faq-bg"></div>
+                <div class="container mx-auto px-5 relative z-10">
                     <div class="text-center mb-16 md:mb-20 reveal-up">
                         <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">FAQ</span>
                         <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Vos
-                            Questions,<br>Mes <span class="text-primary">Réponses</span></h2>
+                            Questions,<br>Mes <span class="section-gradient-text">Réponses</span></h2>
                     </div>
                     <div class="max-w-3xl mx-auto">
                         <div id="accordion-container" class="space-y-3">
@@ -887,7 +877,7 @@
                         <span
                             class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Réservation</span>
                         <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Prête à
-                            faire le<br><span class="text-primary">premier pas</span> ?</h2>
+                            faire le<br><span class="section-gradient-text">premier pas</span> ?</h2>
                         <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Réservez un appel
                             découverte gratuit de 15 minutes. C'est l'occasion idéale pour échanger en toute confiance,
                             sans engagement, et voir si nous sommes faites pour cheminer ensemble.</p>
@@ -1012,7 +1002,7 @@
                         <span
                             class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Contact</span>
                         <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                            Échangeons <span class="text-primary">ensemble</span></h2>
+                            Échangeons <span class="section-gradient-text">ensemble</span></h2>
                         <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Vous avez une
                             question ? Vous souhaitez simplement échanger avant de prendre rendez-vous ? N'hésitez pas à
                             utiliser le moyen de contact qui vous convient le mieux. Je me ferai un plaisir de vous
