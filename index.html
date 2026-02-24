@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hélène Dubois - Sophrologue à Lyon | Retrouvez Calme & Clarté</title>
-    <meta name="description" content="Sophrologue certifiée à Lyon 6 et en visio. Accompagnement personnalisé pour femmes actives, spécialisé dans la gestion du stress, de l'anxiété et la prévention du burn-out. Retrouvez un équilibre durable.">
+    <meta name="description"
+        content="Sophrologue certifiée à Lyon 6 et en visio. Accompagnement personnalisé pour femmes actives, spécialisé dans la gestion du stress, de l'anxiété et la prévention du burn-out. Retrouvez un équilibre durable.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script>
         tailwind.config = {
@@ -34,573 +38,1172 @@
         }
     </script>
 </head>
+
 <body class="bg-background font-sans text-foreground antialiased">
-<div id="root" class="min-h-screen">
+    <div id="root" class="min-h-screen">
 
-    <!-- HEADER -->
-    <header id="header" class="fixed top-0 w-full z-50 header-transition bg-transparent">
-        <nav class="container mx-auto px-5 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <a href="#hero" class="flex items-center gap-2 group z-50 relative">
-                    <div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300"><span class="text-primary font-serif text-lg font-bold">H</span></div>
-                    <span class="text-lg font-serif font-semibold text-foreground tracking-wide">Hélène Dubois</span>
-                </a>
-                <div class="hidden lg:flex items-center gap-1">
-                    <a href="#about" class="nav-link">À propos</a>
-                    <a href="#services" class="nav-link">Accompagnements</a>
-                    <a href="#approach" class="nav-link">Mon Approche</a>
-                    <a href="#testimonials" class="nav-link">Témoignages</a>
-                    <a href="#faq" class="nav-link">FAQ</a>
-                    <a href="#contact" class="ml-4 btn-primary-outline text-sm">Contact</a>
+        <!-- HEADER -->
+        <header id="header" class="fixed top-0 w-full z-50 header-transition bg-transparent">
+            <nav class="container mx-auto px-5 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16 md:h-20">
+                    <a href="#hero" class="flex items-center gap-2 group z-50 relative">
+                        <div
+                            class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300">
+                            <span class="text-primary font-serif text-lg font-bold">H</span></div>
+                        <span class="text-lg font-serif font-semibold text-foreground tracking-wide">Hélène
+                            Dubois</span>
+                    </a>
+                    <div class="hidden lg:flex items-center gap-1">
+                        <a href="#about" class="nav-link">À propos</a>
+                        <a href="#services" class="nav-link">Accompagnements</a>
+                        <a href="#approach" class="nav-link">Mon Approche</a>
+                        <a href="#testimonials" class="nav-link">Témoignages</a>
+                        <a href="#faq" class="nav-link">FAQ</a>
+                        <a href="#contact" class="ml-4 btn-primary-outline text-sm">Contact</a>
+                    </div>
+                    <button id="mobile-menu-btn"
+                        class="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center" aria-label="Menu"
+                        aria-expanded="false">
+                        <div class="hamburger-lines"><span class="hamburger-line line-1"></span><span
+                                class="hamburger-line line-2"></span><span class="hamburger-line line-3"></span></div>
+                    </button>
                 </div>
-                <button id="mobile-menu-btn" class="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center" aria-label="Menu" aria-expanded="false">
-                    <div class="hamburger-lines"><span class="hamburger-line line-1"></span><span class="hamburger-line line-2"></span><span class="hamburger-line line-3"></span></div>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu" class="mobile-menu-overlay">
-            <div class="mobile-menu-content">
-                <div class="flex flex-col items-center justify-center h-full gap-6">
-                    <a href="#about" class="mobile-nav-link">À propos</a>
-                    <a href="#services" class="mobile-nav-link">Accompagnements</a>
-                    <a href="#approach" class="mobile-nav-link">Mon Approche</a>
-                    <a href="#testimonials" class="mobile-nav-link">Témoignages</a>
-                    <a href="#faq" class="mobile-nav-link">FAQ</a>
-                    <div class="w-12 h-px bg-primary/30 my-2"></div>
-                    <a href="#contact" class="mobile-nav-link"><span class="btn-primary px-8 py-3 text-base">Contact</span></a>
+            </nav>
+            <div id="mobile-menu" class="mobile-menu-overlay">
+                <div class="mobile-menu-content">
+                    <div class="flex flex-col items-center justify-center h-full gap-6">
+                        <a href="#about" class="mobile-nav-link">À propos</a>
+                        <a href="#services" class="mobile-nav-link">Accompagnements</a>
+                        <a href="#approach" class="mobile-nav-link">Mon Approche</a>
+                        <a href="#testimonials" class="mobile-nav-link">Témoignages</a>
+                        <a href="#faq" class="mobile-nav-link">FAQ</a>
+                        <div class="w-12 h-px bg-primary/30 my-2"></div>
+                        <a href="#contact" class="mobile-nav-link"><span
+                                class="btn-primary px-8 py-3 text-base">Contact</span></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <!-- HERO (with parallax) -->
-        <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            <div id="hero-parallax" class="absolute inset-0 z-0 will-change-transform">
-               <div class="absolute inset-0 scale-110 hero-bg-image" style="background-image: url('images/hero-background.webp');"></div>
-                <div class="absolute inset-0 hero-overlay"></div>
-            </div>
-            <div class="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute bottom-20 right-10 w-96 h-96 bg-sage/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="relative z-10 container mx-auto text-center px-5">
-                <div class="max-w-4xl mx-auto">
-                    <div class="mb-8 reveal-hero" style="--delay:0.1s">
-                        <span class="inline-flex items-center gap-2 bg-white/70 backdrop-blur-md border border-white/40 rounded-full px-5 py-2 text-sm text-primary font-medium shadow-sm">
-                            <span class="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
-                            Sophrologue certifiée — Lyon &amp; Visio
+        <main>
+            <!-- HERO (with parallax) -->
+            <section id="hero"
+                class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
+                <div id="hero-parallax" class="absolute inset-0 z-0 will-change-transform">
+                    <div class="absolute inset-0 scale-110 hero-bg-image"
+                        style="background-image: url('images/hero-background.webp');"></div>
+                    <div class="absolute inset-0 hero-overlay"></div>
+                </div>
+                <div class="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-sage/5 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div class="relative z-10 container mx-auto text-center px-5">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="mb-8 reveal-hero" style="--delay:0.1s">
+                            <span
+                                class="inline-flex items-center gap-2 bg-white/70 backdrop-blur-md border border-white/40 rounded-full px-5 py-2 text-sm text-primary font-medium shadow-sm">
+                                <span class="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
+                                Sophrologue certifiée — Lyon &amp; Visio
+                            </span>
+                        </div>
+                        <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-[1.08] tracking-tight reveal-hero"
+                            style="--delay:0.25s">
+                            Retrouvez<br><span class="text-primary italic">Calme</span> et <span
+                                class="text-primary italic">Clarté</span> au Quotidien
+                        </h1>
+                        <p class="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto reveal-hero"
+                            style="--delay:0.4s">
+                            Sophrologie pour femmes actives. Un accompagnement sur-mesure à Lyon et en visio pour vous
+                            libérer du stress et prévenir l'épuisement professionnel.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal-hero"
+                            style="--delay:0.55s">
+                            <a href="#services" class="btn-primary text-base px-8 py-3.5 shadow-lg">Découvrir mes
+                                accompagnements</a>
+                            <a href="#about" class="btn-ghost text-base px-8 py-3.5">Qui suis-je ?<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="ml-1.5 inline-block align-middle">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft gradient fade instead of wave -->
+                <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10">
+                </div>
+            </section>
+
+            <!-- TRUST BANNER (static badges) -->
+            <section class="trust-banner-section relative py-10 md:py-12">
+                <div class="container mx-auto px-5">
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 md:gap-x-10">
+                        <span class="trust-badge">
+                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg></span>
+                            <span>Certifiée RNCP Niveau 5</span>
+                        </span>
+                        <span class="trust-badge">
+                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                                </svg></span>
+                            <span>Institut de Sophrologie de Lyon</span>
+                        </span>
+                        <span class="trust-badge">
+                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg></span>
+                            <span>Chambre Syndicale de la Sophrologie</span>
+                        </span>
+                        <span class="trust-badge">
+                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                                </svg></span>
+                            <span>Supervision et éthique professionnelle</span>
+                        </span>
+                        <span class="trust-badge">
+                            <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="6" />
+                                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                                </svg></span>
+                            <span>15 ans d'expérience en entreprise</span>
                         </span>
                     </div>
-                    <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-[1.08] tracking-tight reveal-hero" style="--delay:0.25s">
-                        Retrouvez<br><span class="text-primary italic">Calme</span> et <span class="text-primary italic">Clarté</span> au Quotidien
-                    </h1>
-                    <p class="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto reveal-hero" style="--delay:0.4s">
-                        Sophrologie pour femmes actives. Un accompagnement sur-mesure à Lyon et en visio pour vous libérer du stress et prévenir l'épuisement professionnel.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal-hero" style="--delay:0.55s">
-                        <a href="#services" class="btn-primary text-base px-8 py-3.5 shadow-lg">Découvrir mes accompagnements</a>
-                        <a href="#about" class="btn-ghost text-base px-8 py-3.5">Qui suis-je ?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1.5 inline-block align-middle"><path d="m6 9 6 6 6-6"/></svg></a>
-                    </div>
                 </div>
-            </div>
-            <!-- Soft gradient fade instead of wave -->
-            <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10"></div>
-        </section>
+            </section>
 
-        <!-- TRUST BANNER (static badges) -->
-        <section class="trust-banner-section relative py-10 md:py-12">
-            <div class="container mx-auto px-5">
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 md:gap-x-10">
-                    <span class="trust-badge">
-                        <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
-                        <span>Certifiée RNCP Niveau 5</span>
-                    </span>
-                    <span class="trust-badge">
-                        <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
-                        <span>Institut de Sophrologie de Lyon</span>
-                    </span>
-                    <span class="trust-badge">
-                        <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-                        <span>Chambre Syndicale de la Sophrologie</span>
-                    </span>
-                    <span class="trust-badge">
-                        <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg></span>
-                        <span>Supervision et éthique professionnelle</span>
-                    </span>
-                    <span class="trust-badge">
-                        <span class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
-                        <span>15 ans d'expérience en entreprise</span>
-                    </span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT — Sticky Scroll + Timeline -->
-        <section id="about" class="about-section bg-warm relative">
-            <div class="section-grain"></div>
-            <div class="container mx-auto px-5 relative">
-                <!-- Section Header -->
-                <div class="text-center pt-20 md:pt-28 pb-14 md:pb-20 reveal-up">
-                    <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Mon Parcours</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">Mon Chemin vers la <span class="text-primary">Sérénité</span></h2>
-                </div>
-
-                <!-- Sticky Scroll Layout -->
-                <div class="about-grid pb-20 md:pb-28">
-                    <!-- Left: Sticky Image -->
-                    <div class="about-sticky-col">
-                        <div class="about-sticky-wrap">
-                            <div class="relative max-w-lg mx-auto lg:mx-0">
-                                <div class="absolute -inset-4 bg-primary/5 rounded-2xl -rotate-3"></div>
-                                <div class="relative">
-                                    <img loading="lazy" src="images/about-portrait-helene.webp" alt="Hélène Dubois, sophrologue à Lyon" class="w-full h-auto rounded-xl shadow-xl object-cover">
-                                </div>
-                                <div class="absolute -bottom-6 right-0 sm:right-4 bg-white rounded-xl shadow-lg p-4 flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
-                                    <div><p class="text-sm font-semibold text-foreground">Certifiée RNCP</p><p class="text-xs text-muted-foreground">Sophrologue diplômée</p></div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- ABOUT — Sticky Scroll + Timeline -->
+            <section id="about" class="about-section bg-warm relative">
+                <div class="section-grain"></div>
+                <div class="container mx-auto px-5 relative">
+                    <!-- Section Header -->
+                    <div class="text-center pt-20 md:pt-28 pb-14 md:pb-20 reveal-up">
+                        <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Mon
+                            Parcours</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">Mon Chemin
+                            vers la <span class="text-primary">Sérénité</span></h2>
                     </div>
 
-                    <!-- Right: Timeline Chapters -->
-                    <div class="about-timeline-col">
-                        <div class="about-timeline">
-                            <!-- Chapter 1 -->
-                            <div class="timeline-chapter">
-                                <div class="timeline-track">
-                                    <div class="timeline-node">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    <!-- Sticky Scroll Layout -->
+                    <div class="about-grid pb-20 md:pb-28">
+                        <!-- Left: Sticky Image -->
+                        <div class="about-sticky-col">
+                            <div class="about-sticky-wrap">
+                                <div class="relative max-w-lg mx-auto lg:mx-0">
+                                    <div class="absolute -inset-4 bg-primary/5 rounded-2xl -rotate-3"></div>
+                                    <div class="relative">
+                                        <img loading="lazy" src="images/about-portrait-helene.webp"
+                                            alt="Hélène Dubois, sophrologue à Lyon"
+                                            class="w-full h-auto rounded-xl shadow-xl object-cover">
                                     </div>
-                                    <div class="timeline-line"></div>
-                                </div>
-                                <div class="timeline-content">
-                                    <span class="timeline-label">La vie d'avant</span>
-                                    <h3 class="font-serif text-2xl md:text-[1.7rem] font-semibold text-foreground mb-4 leading-snug">15 ans dans le marketing — jusqu'au burn-out</h3>
-                                    <p class="text-base md:text-lg text-muted-foreground leading-relaxed">Pendant plus de quinze ans, j'ai évolué dans le monde exigeant du marketing, jonglant avec les responsabilités, les délais et une pression constante. J'aimais mon métier, mais j'ai fini par m'oublier. Le stress est devenu chronique, le sommeil agité, et la charge mentale, un poids de chaque instant. Jusqu'au jour où mon corps a dit stop : le burn-out.</p>
-                                </div>
-                            </div>
-
-                            <!-- Chapter 2 -->
-                            <div class="timeline-chapter">
-                                <div class="timeline-track">
-                                    <div class="timeline-node node-sage">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
-                                    </div>
-                                    <div class="timeline-line"></div>
-                                </div>
-                                <div class="timeline-content">
-                                    <span class="timeline-label">Le déclic</span>
-                                    <h3 class="font-serif text-2xl md:text-[1.7rem] font-semibold text-foreground mb-4 leading-snug">La sophrologie, un électrochoc et une renaissance</h3>
-                                    <p class="text-base md:text-lg text-muted-foreground leading-relaxed">Cette épreuve a été un électrochoc, mais aussi une renaissance. C'est la sophrologie qui m'a tendu la main. J'y ai découvert des outils concrets pour apaiser mon mental, écouter les signaux de mon corps et, pas à pas, retrouver un équilibre durable. Cette transformation a été si profonde que j'ai décidé d'en faire ma nouvelle voie.</p>
-                                </div>
-                            </div>
-
-                            <!-- Chapter 3 -->
-                            <div class="timeline-chapter">
-                                <div class="timeline-track">
-                                    <div class="timeline-node node-gold">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                                    <div
+                                        class="absolute -bottom-6 right-0 sm:right-4 bg-white rounded-xl shadow-lg p-4 flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" class="text-sage">
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                                <path d="m9 11 3 3L22 4" />
+                                            </svg></div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-foreground">Certifiée RNCP</p>
+                                            <p class="text-xs text-muted-foreground">Sophrologue diplômée</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="timeline-content">
-                                    <span class="timeline-label">Aujourd'hui</span>
-                                    <h3 class="font-serif text-2xl md:text-[1.7rem] font-semibold text-foreground mb-4 leading-snug">Mon engagement : votre sérénité au quotidien</h3>
-                                    <p class="text-base md:text-lg text-muted-foreground leading-relaxed">Aujourd'hui, je mets mon expérience et mon expertise à votre service. Je ne suis pas là pour vous donner des leçons, mais pour vous accompagner avec bienveillance et pragmatisme sur votre propre chemin. Mon engagement est de vous offrir un espace de sécurité où vous pourrez déposer vos valises, sans jugement, et repartir avec une boîte à outils personnalisée pour cultiver votre sérénité, jour après jour.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right: Timeline Chapters -->
+                        <div class="about-timeline-col">
+                            <div class="about-timeline">
+                                <!-- Chapter 1 -->
+                                <div class="timeline-chapter">
+                                    <div class="timeline-track">
+                                        <div class="timeline-node">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-label">La vie d'avant</span>
+                                        <h3
+                                            class="font-serif text-2xl md:text-[1.7rem] font-semibold text-foreground mb-4 leading-snug">
+                                            15 ans dans le marketing — jusqu'au burn-out</h3>
+                                        <p class="text-base md:text-lg text-muted-foreground leading-relaxed">Pendant
+                                            plus de quinze ans, j'ai évolué dans le monde exigeant du marketing,
+                                            jonglant avec les responsabilités, les délais et une pression constante.
+                                            J'aimais mon métier, mais j'ai fini par m'oublier. Le stress est devenu
+                                            chronique, le sommeil agité, et la charge mentale, un poids de chaque
+                                            instant. Jusqu'au jour où mon corps a dit stop : le burn-out.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Chapter 2 -->
+                                <div class="timeline-chapter">
+                                    <div class="timeline-track">
+                                        <div class="timeline-node node-sage">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-label">Le déclic</span>
+                                        <h3
+                                            class="font-serif text-2xl md:text-[1.7rem] font-semibold text-foreground mb-4 leading-snug">
+                                            La sophrologie, un électrochoc et une renaissance</h3>
+                                        <p class="text-base md:text-lg text-muted-foreground leading-relaxed">Cette
+                                            épreuve a été un électrochoc, mais aussi une renaissance. C'est la
+                                            sophrologie qui m'a tendu la main. J'y ai découvert des outils concrets pour
+                                            apaiser mon mental, écouter les signaux de mon corps et, pas à pas,
+                                            retrouver un équilibre durable. Cette transformation a été si profonde que
+                                            j'ai décidé d'en faire ma nouvelle voie.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Chapter 3 -->
+                                <div class="timeline-chapter">
+                                    <div class="timeline-track">
+                                        <div class="timeline-node node-gold">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                                                <path d="M9 18h6" />
+                                                <path d="M10 22h4" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-label">Aujourd'hui</span>
+                                        <h3
+                                            class="font-serif text-2xl md:text-[1.7rem] font-semibold text-foreground mb-4 leading-snug">
+                                            Mon engagement : votre sérénité au quotidien</h3>
+                                        <p class="text-base md:text-lg text-muted-foreground leading-relaxed">
+                                            Aujourd'hui, je mets mon expérience et mon expertise à votre service. Je ne
+                                            suis pas là pour vous donner des leçons, mais pour vous accompagner avec
+                                            bienveillance et pragmatisme sur votre propre chemin. Mon engagement est de
+                                            vous offrir un espace de sécurité où vous pourrez déposer vos valises, sans
+                                            jugement, et repartir avec une boîte à outils personnalisée pour cultiver
+                                            votre sérénité, jour après jour.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- ANIMATED COUNTERS — glassmorphism -->
-        <section class="stats-section relative py-16 md:py-20 overflow-hidden">
-            <div class="stats-bg"></div>
-            <div class="container mx-auto px-5 relative z-10">
-                <div class="stats-glass max-w-5xl mx-auto rounded-2xl p-8 md:p-12">
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal-up">
-                        <div class="text-center">
-                            <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span class="counter" data-target="15">0</span><span class="text-sage">+</span></div>
-                            <p class="text-sm text-muted-foreground">années d'expérience</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span class="counter" data-target="200">0</span><span class="text-sage">+</span></div>
-                            <p class="text-sm text-muted-foreground">clientes accompagnées</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span class="counter" data-target="98">0</span><span class="text-sage">%</span></div>
-                            <p class="text-sm text-muted-foreground">taux de satisfaction</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span class="counter" data-target="5">0</span><span class="text-sage">★</span></div>
-                            <p class="text-sm text-muted-foreground">note Google moyenne</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES — Showcase Cards -->
-        <section id="services" class="py-20 md:py-28 overflow-hidden">
-            <div class="container mx-auto px-5">
-                <div class="text-center mb-16 md:mb-20 reveal-up">
-                    <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Accompagnements</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Mes Accompagnements,<br>Votre <span class="text-primary">Mieux-Être</span></h2>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-
-                    <!-- Card 1: Clarté -->
-                    <div class="showcase-card reveal-card">
-                        <div class="showcase-card-inner">
-                            <!-- Compact Header -->
-                            <div class="showcase-header">
-                                <div class="service-icon-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                </div>
-                                <div class="flex items-baseline gap-3">
-                                    <span class="text-3xl font-serif font-bold text-primary">70€</span>
-                                    <span class="text-sm text-muted-foreground">· 1h15</span>
-                                </div>
+            <!-- ANIMATED COUNTERS — glassmorphism -->
+            <section class="stats-section relative py-16 md:py-20 overflow-hidden">
+                <div class="stats-bg"></div>
+                <div class="container mx-auto px-5 relative z-10">
+                    <div class="stats-glass max-w-5xl mx-auto rounded-2xl p-8 md:p-12">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal-up">
+                            <div class="text-center">
+                                <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span
+                                        class="counter" data-target="15">0</span><span class="text-sage">+</span></div>
+                                <p class="text-sm text-muted-foreground">années d'expérience</p>
                             </div>
-                            <h3 class="text-xl font-semibold text-foreground mb-1">Séance "Clarté"</h3>
-                            <p class="text-sm text-muted-foreground mb-4">Première Rencontre</p>
-                            <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Ce premier rendez-vous est un temps d'échange privilégié pour faire le point sur votre situation, sans jugement.</p>
-
-                            <!-- Expandable Details -->
-                            <div class="showcase-details">
-                                <div class="showcase-details-inner">
-                                    <p class="text-muted-foreground leading-relaxed text-sm mb-5">Nous clarifions ensemble vos besoins et définissons un objectif personnalisé. Vous repartez avec une première pratique de sophrologie pour ressentir un apaisement immédiat.</p>
-                                    <ul class="space-y-2.5">
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Un temps d'écoute confidentiel pour comprendre votre histoire</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>La définition d'un objectif d'accompagnement clair et réalisable</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Une première pratique de relaxation guidée</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Des premiers conseils concrets à appliquer dès la fin de la séance</span></li>
-                                    </ul>
-                                </div>
+                            <div class="text-center">
+                                <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span
+                                        class="counter" data-target="200">0</span><span class="text-sage">+</span></div>
+                                <p class="text-sm text-muted-foreground">clientes accompagnées</p>
                             </div>
-
-                            <!-- Toggle + CTA -->
-                            <button class="showcase-toggle" aria-expanded="false">
-                                <span class="showcase-toggle-text">En savoir plus</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="showcase-toggle-icon"><path d="m6 9 6 6 6-6"/></svg>
-                            </button>
-                            <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Réserver ma séance "Clarté"</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Sérénité (Featured) -->
-                    <div class="showcase-card showcase-featured reveal-card">
-                        <div class="service-card-accent"></div>
-                        <div class="showcase-card-inner">
-                            <!-- Compact Header -->
-                            <div class="showcase-header">
-                                <div class="service-icon-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
-                                </div>
-                                <span class="showcase-popular-badge">Populaire</span>
+                            <div class="text-center">
+                                <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span
+                                        class="counter" data-target="98">0</span><span class="text-sage">%</span></div>
+                                <p class="text-sm text-muted-foreground">taux de satisfaction</p>
                             </div>
-                            <h3 class="text-xl font-semibold text-foreground mb-1">Accompagnement "Sérénité"</h3>
-                            <p class="text-sm text-muted-foreground mb-4">Le Parcours</p>
-                            <div class="flex items-baseline gap-3 mb-4">
-                                <span class="text-3xl font-serif font-bold text-primary">Forfait 300€</span>
-                                <span class="text-sm text-muted-foreground">· 5 séances</span>
-                            </div>
-                            <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Un parcours sur-mesure pour intégrer durablement les bienfaits de la sophrologie dans votre vie.</p>
-
-                            <!-- Expandable Details -->
-                            <div class="showcase-details">
-                                <div class="showcase-details-inner">
-                                    <p class="text-muted-foreground leading-relaxed text-sm mb-5">Idéal pour un travail en profondeur sur la gestion du stress, le sommeil, la confiance en soi ou la préparation à un événement. Nous avançons à votre rythme pour vous rendre autonome dans votre pratique.</p>
-                                    <ul class="space-y-2.5">
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Cinq séances d'une heure, espacées de une à deux semaines</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Un protocole personnalisé évoluant au fil de vos progrès</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>L'apprentissage de techniques variées (respiration, visualisation, détente musculaire)</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Des enregistrements audio des pratiques pour vous entraîner entre les séances</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Toggle + CTA -->
-                            <button class="showcase-toggle" aria-expanded="false">
-                                <span class="showcase-toggle-text">En savoir plus</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="showcase-toggle-icon"><path d="m6 9 6 6 6-6"/></svg>
-                            </button>
-                            <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Commencer mon parcours</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Pause Sophro -->
-                    <div class="showcase-card reveal-card">
-                        <div class="showcase-card-inner">
-                            <!-- Compact Header -->
-                            <div class="showcase-header">
-                                <div class="service-icon-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                                </div>
-                                <div class="flex items-baseline gap-3">
-                                    <span class="text-3xl font-serif font-bold text-primary">Sur Devis</span>
-                                    <span class="text-sm text-muted-foreground">· Variable</span>
-                                </div>
-                            </div>
-                            <h3 class="text-xl font-semibold text-foreground mb-1">Atelier "Pause Sophro"</h3>
-                            <p class="text-sm text-muted-foreground mb-4">En Entreprise</p>
-                            <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Proposez à vos équipes une bulle de décompression pour mieux gérer le stress et améliorer leur concentration.</p>
-
-                            <!-- Expandable Details -->
-                            <div class="showcase-details">
-                                <div class="showcase-details-inner">
-                                    <p class="text-muted-foreground leading-relaxed text-sm mb-5">Des ateliers collectifs sur-mesure (gestion du stress, cohésion, prise de parole) pour favoriser le bien-être et la performance au travail.</p>
-                                    <ul class="space-y-2.5">
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Format adaptable : de 1h à une demi-journée</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Ateliers pratiques et interactifs</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Outils directement applicables dans l'environnement professionnel</span></li>
-                                        <li class="service-feature"><span class="feature-dot"></span><span>Intervention sur site ou en visio</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Toggle + CTA -->
-                            <button class="showcase-toggle" aria-expanded="false">
-                                <span class="showcase-toggle-text">En savoir plus</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="showcase-toggle-icon"><path d="m6 9 6 6 6-6"/></svg>
-                            </button>
-                            <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Demander un devis</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- APPROACH -->
-        <section id="approach" class="py-20 md:py-28 approach-section overflow-hidden relative">
-            <div class="section-grain"></div>
-            <div class="container mx-auto px-5 relative">
-                <div class="text-center mb-16 md:mb-20 reveal-up">
-                    <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Mon Approche</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Comment je vous accompagne,<br><span class="text-primary">pas à pas</span></h2>
-                    <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Chaque accompagnement est unique, car vous êtes unique. Cependant, pour que vous vous sentiez en parfaite sécurité, nos rencontres suivent un cadre bienveillant et structuré. Voici les grandes étapes de notre chemin ensemble.</p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
-                    <div class="hidden md:block absolute top-24 left-[20%] right-[20%] h-px approach-line"></div>
-                    <div class="approach-card reveal-card">
-                        <div class="relative z-10 text-center">
-                            <div class="relative w-20 h-20 mx-auto mb-6"><div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div><div class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></svg></div><div class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">1</div></div>
-                            <h3 class="text-xl font-semibold text-foreground mb-4">Un Temps d'Écoute &amp; de Clarté</h3>
-                            <p class="text-muted-foreground leading-relaxed text-sm">Notre séance débute toujours par un échange confidentiel pour que vous puissiez déposer ce qui est présent pour vous. Cet instant précieux nous permet de définir ensemble l'intention de notre rencontre et d'ajuster la pratique à vos besoins du moment.</p>
-                        </div>
-                    </div>
-                    <div class="approach-card reveal-card">
-                        <div class="relative z-10 text-center">
-                            <div class="relative w-20 h-20 mx-auto mb-6"><div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div><div class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div><div class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">2</div></div>
-                            <h3 class="text-xl font-semibold text-foreground mb-4">Le Cœur de la Pratique Guidée</h3>
-                            <p class="text-muted-foreground leading-relaxed text-sm">Confortablement installée, je vous guide par ma voix à travers des exercices de respiration, de détente musculaire et de visualisation positive. Vous n'avez rien à "réussir", simplement à vous laisser porter et à accueillir vos ressentis, en toute sécurité.</p>
-                        </div>
-                    </div>
-                    <div class="approach-card reveal-card">
-                        <div class="relative z-10 text-center">
-                            <div class="relative w-20 h-20 mx-auto mb-6"><div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div><div class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div><div class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">3</div></div>
-                            <h3 class="text-xl font-semibold text-foreground mb-4">L'Intégration &amp; Vos Outils pour Demain</h3>
-                            <p class="text-muted-foreground leading-relaxed text-sm">Nous terminons par un court partage pour intégrer les bienfaits de la séance. L'objectif est que vous repartiez non seulement apaisée, mais aussi avec une ou deux clés concrètes à intégrer facilement dans votre quotidien pour cultiver cet état de bien-être.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS — ocean colored section -->
-        <section id="testimonials" class="testimonials-section py-20 md:py-28 overflow-hidden relative">
-            <div class="container mx-auto px-5 relative z-10">
-                <div class="text-center mb-16 md:mb-20 reveal-up">
-                    <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Témoignages</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Ce qu'elles <span class="text-primary">en disent</span></h2>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                    <div class="testimonial-card reveal-card">
-                        <div class="testimonial-accent"></div>
-                        <div class="p-6 lg:p-8">
-                            <div class="flex gap-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-                            <blockquote class="text-muted-foreground leading-relaxed mb-6 text-[0.95rem]">"Avant de rencontrer Hélène, j'étais constamment submergée par le stress de mon travail de manager. J'étais épuisée et à fleur de peau. Dès la première séance, sa douceur et son écoute sans jugement m'ont mise en confiance. Aujourd'hui, après quelques séances, j'ai une véritable boîte à outils pour gérer la pression au quotidien. Je dors mieux et j'aborde mes journées avec beaucoup plus de sérénité. C'est un vrai changement."</blockquote>
-                            <div class="flex items-center gap-4 pt-5 border-t border-border/60"><div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0"><span class="text-primary font-serif font-bold text-lg">C</span></div><div><p class="font-semibold text-foreground text-sm">Claire S.</p><p class="text-xs text-muted-foreground">Manager à Lyon, Accompagnement Gestion du Stress</p></div></div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card reveal-card">
-                        <div class="testimonial-accent"></div>
-                        <div class="p-6 lg:p-8">
-                            <div class="flex gap-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-                            <blockquote class="text-muted-foreground leading-relaxed mb-6 text-[0.95rem]">"Jeune entrepreneure, l'anxiété de la performance me paralysait. Hélène m'a appris à me reconnecter à mes ressources intérieures. Ses visualisations m'ont aidée à regagner confiance en moi avant des présentations importantes. Son approche pragmatique et sa propre expérience du monde de l'entreprise ont été un vrai plus. Je me sens beaucoup plus solide et alignée."</blockquote>
-                            <div class="flex items-center gap-4 pt-5 border-t border-border/60"><div class="w-11 h-11 rounded-full bg-sage/10 flex items-center justify-center flex-shrink-0"><span class="text-sage font-serif font-bold text-lg">M</span></div><div><p class="font-semibold text-foreground text-sm">Manon L.</p><p class="text-xs text-muted-foreground">Entrepreneure en visio, Accompagnement Confiance en Soi</p></div></div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card reveal-card">
-                        <div class="testimonial-accent"></div>
-                        <div class="p-6 lg:p-8">
-                            <div class="flex gap-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-                            <blockquote class="text-muted-foreground leading-relaxed mb-6 text-[0.95rem]">"La charge mentale était devenue insupportable. J'avais l'impression d'être une cocotte-minute sur le point d'exploser. Grâce à l'accompagnement d'Hélène, j'ai appris à créer des 'bulles de décompression' dans mes journées. Elle m'a donné des clés simples et efficaces pour ne plus me laisser déborder. C'est un immense soulagement."</blockquote>
-                            <div class="flex items-center gap-4 pt-5 border-t border-border/60"><div class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0"><span class="text-primary font-serif font-bold text-lg">S</span></div><div><p class="font-semibold text-foreground text-sm">Sophie T.</p><p class="text-xs text-muted-foreground">Mère de famille et salariée, Accompagnement Charge Mentale</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" class="py-20 md:py-28 overflow-hidden">
-            <div class="container mx-auto px-5">
-                <div class="text-center mb-16 md:mb-20 reveal-up">
-                    <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">FAQ</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Vos Questions,<br>Mes <span class="text-primary">Réponses</span></h2>
-                </div>
-                <div class="max-w-3xl mx-auto">
-                    <div id="accordion-container" class="space-y-3">
-                        <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span class="flex-1 text-left">Je n'ai jamais fait de sophrologie, est-ce que c'est pour moi ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-chevron flex-shrink-0 ml-4"><path d="m6 9 6 6 6-6"/></svg></button><div class="accordion-content"><p>Absolument ! La plupart des personnes que j'accompagne découvrent la sophrologie pour la première fois. Il n'y a aucun prérequis. Mon rôle est de vous guider avec douceur et à votre rythme, dans un cadre bienveillant. Chaque séance est une invitation à la découverte de soi, pas une performance.</p></div></div>
-                        <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span class="flex-1 text-left">Combien de séances faut-il prévoir pour ressentir des bienfaits ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-chevron flex-shrink-0 ml-4"><path d="m6 9 6 6 6-6"/></svg></button><div class="accordion-content"><p>Chaque parcours est unique, mais des bienfaits comme une sensation de détente profonde peuvent être ressentis dès la première séance. Pour un changement durable, on considère qu'un accompagnement de 5 à 8 séances permet d'intégrer les outils en profondeur. Nous ferons le point ensemble à chaque étape.</p></div></div>
-                        <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span class="flex-1 text-left">La sophrologie remplace-t-elle un suivi médical ou psychologique ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-chevron flex-shrink-0 ml-4"><path d="m6 9 6 6 6-6"/></svg></button><div class="accordion-content"><p>C'est une excellente question. Mon approche est une technique complémentaire qui vise le bien-être. Elle ne se substitue en aucun cas à un diagnostic ou à un traitement médical. Je travaille en bonne intelligence avec le corps médical et je vous encouragerai toujours à consulter votre médecin ou un psychologue pour toute question de santé.</p></div></div>
-                        <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span class="flex-1 text-left">Proposez-vous des séances en visio ? Sont-elles aussi efficaces ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-chevron flex-shrink-0 ml-4"><path d="m6 9 6 6 6-6"/></svg></button><div class="accordion-content"><p>Oui, je propose toutes mes séances en visio. L'efficacité est la même, car la sophrologie repose sur le guidage par la voix. Il vous suffit d'avoir une bonne connexion internet et un endroit calme où vous ne serez pas dérangée, avec des écouteurs pour une immersion optimale. Cela offre une grande flexibilité.</p></div></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- RESERVATION — gradient section -->
-        <section id="reservation" class="reservation-section py-20 md:py-28 overflow-hidden relative">
-            <div class="reservation-bg"></div>
-            <div class="container mx-auto px-5 relative z-10">
-                <div class="text-center mb-16 md:mb-20 reveal-up">
-                    <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Réservation</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Prête à faire le<br><span class="text-primary">premier pas</span> ?</h2>
-                    <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Réservez un appel découverte gratuit de 15 minutes. C'est l'occasion idéale pour échanger en toute confiance, sans engagement, et voir si nous sommes faites pour cheminer ensemble.</p>
-                </div>
-                <div class="max-w-5xl mx-auto reveal-up">
-                    <div class="calendly-widget">
-                        <div class="calendly-badge"><span class="text-[10px] text-muted-foreground tracking-wide uppercase">Alimenté par</span><span class="text-xs font-bold text-foreground ml-1">Calendly</span></div>
-                        <div class="grid lg:grid-cols-5">
-                            <div class="lg:col-span-2 p-6 md:p-8 border-b lg:border-b-0 lg:border-r border-border/60">
-                                <img loading="lazy" src="images/about-portrait-helene.webp" alt="Hélène Dubois" class="w-16 h-16 rounded-full object-cover mb-4 ring-2 ring-primary/10 ring-offset-2">
-                                <p class="text-muted-foreground text-sm">Hélène Dubois</p>
-                                <h3 class="text-xl font-bold text-foreground mb-3">Appel Découverte (15 min)</h3>
-                                <div class="flex items-center gap-4 text-muted-foreground text-sm mb-6">
-                                    <span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15 min</span>
-                                    <span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l5 5-5 5"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>Gratuit</span>
-                                </div>
-                                <p class="text-muted-foreground text-sm leading-relaxed mb-6">Cet appel gratuit est une première étape pour échanger sur votre situation et voir comment la sophrologie peut vous aider à retrouver calme et clarté.</p>
-                                <h4 class="font-semibold text-foreground mb-3 text-sm">Objectif :</h4>
-                                <div class="space-y-3 text-sm mb-6">
-                                    <div class="flex items-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage mt-0.5 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-muted-foreground">Discuter de vos besoins et de vos objectifs de bien-être.</span></div>
-                                    <div class="flex items-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage mt-0.5 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-muted-foreground">Répondre à vos questions sur la sophrologie et mon approche.</span></div>
-                                    <div class="flex items-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage mt-0.5 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-muted-foreground">Valider ensemble si mon accompagnement est la bonne solution pour vous.</span></div>
-                                </div>
-                                <p class="text-muted-foreground text-sm leading-relaxed mb-6">C'est un échange simple, concret et sans aucun engagement.</p>
-                            </div>
-                            <div class="lg:col-span-3 p-6 md:p-8">
-                                <h4 class="text-base font-semibold text-foreground mb-5">Sélectionnez la date et l'heure</h4>
-                                <div class="flex items-center justify-between mb-4">
-                                    <button id="cal-prev" class="cal-nav-btn" aria-label="Mois précédent"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
-                                    <span id="cal-month-label" class="font-semibold text-foreground text-sm"></span>
-                                    <button id="cal-next" class="cal-nav-btn" aria-label="Mois suivant"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
-                                </div>
-                                <div class="grid grid-cols-7 gap-y-1 text-center text-sm mb-1"><div class="cal-day-header">LUN</div><div class="cal-day-header">MAR</div><div class="cal-day-header">MER</div><div class="cal-day-header">JEU</div><div class="cal-day-header">VEN</div><div class="cal-day-header">SAM</div><div class="cal-day-header">DIM</div></div>
-                                <div id="calendar-days" class="grid grid-cols-7 gap-y-1 text-center text-sm"></div>
-                                <div id="time-slots-container" class="hidden mt-6 pt-5 border-t border-border/60"><h5 class="text-sm font-semibold text-foreground mb-3" id="selected-date-label"></h5><div id="time-slots" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div></div>
-                                <div class="mt-6 pt-4 border-t border-border/40"><div class="flex items-center gap-2 text-muted-foreground text-xs"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>Heure de l'Europe centrale (Paris)</span></div></div>
+                            <div class="text-center">
+                                <div class="text-4xl md:text-5xl font-serif font-bold text-primary mb-2"><span
+                                        class="counter" data-target="5">0</span><span class="text-sage">★</span></div>
+                                <p class="text-sm text-muted-foreground">note Google moyenne</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- CONTACT -->
-        <section id="contact" class="py-20 md:py-28 bg-warm overflow-hidden relative">
-            <div class="section-grain"></div>
-            <div class="container mx-auto px-5 relative">
-                <div class="text-center mb-16 md:mb-20 reveal-up">
-                    <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Contact</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Échangeons <span class="text-primary">ensemble</span></h2>
-                    <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Vous avez une question ? Vous souhaitez simplement échanger avant de prendre rendez-vous ? N'hésitez pas à utiliser le moyen de contact qui vous convient le mieux. Je me ferai un plaisir de vous répondre avec attention.</p>
+            <!-- SERVICES — Showcase Cards -->
+            <section id="services" class="py-20 md:py-28 overflow-hidden">
+                <div class="container mx-auto px-5">
+                    <div class="text-center mb-16 md:mb-20 reveal-up">
+                        <span
+                            class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Accompagnements</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Mes
+                            Accompagnements,<br>Votre <span class="text-primary">Mieux-Être</span></h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                        <!-- Card 1: Clarté -->
+                        <div class="showcase-card reveal-card">
+                            <div class="showcase-card-inner">
+                                <!-- Compact Header -->
+                                <div class="showcase-header">
+                                    <div class="service-icon-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <polyline points="12 6 12 12 16 14" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-baseline gap-3">
+                                        <span class="text-3xl font-serif font-bold text-primary">70€</span>
+                                        <span class="text-sm text-muted-foreground">· 1h15</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-foreground mb-1">Séance "Clarté"</h3>
+                                <p class="text-sm text-muted-foreground mb-4">Première Rencontre</p>
+                                <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Ce premier
+                                    rendez-vous est un temps d'échange privilégié pour faire le point sur votre
+                                    situation, sans jugement.</p>
+
+                                <!-- Expandable Details -->
+                                <div class="showcase-details">
+                                    <div class="showcase-details-inner">
+                                        <p class="text-muted-foreground leading-relaxed text-sm mb-5">Nous clarifions
+                                            ensemble vos besoins et définissons un objectif personnalisé. Vous repartez
+                                            avec une première pratique de sophrologie pour ressentir un apaisement
+                                            immédiat.</p>
+                                        <ul class="space-y-2.5">
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Un temps
+                                                    d'écoute confidentiel pour comprendre votre histoire</span></li>
+                                            <li class="service-feature"><span class="feature-dot"></span><span>La
+                                                    définition d'un objectif d'accompagnement clair et réalisable</span>
+                                            </li>
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Une
+                                                    première pratique de relaxation guidée</span></li>
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Des
+                                                    premiers conseils concrets à appliquer dès la fin de la
+                                                    séance</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Toggle + CTA -->
+                                <button class="showcase-toggle" aria-expanded="false">
+                                    <span class="showcase-toggle-text">En savoir plus</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="showcase-toggle-icon">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Réserver ma séance
+                                    "Clarté"</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Sérénité (Featured) -->
+                        <div class="showcase-card showcase-featured reveal-card">
+                            <div class="service-card-accent"></div>
+                            <div class="showcase-card-inner">
+                                <!-- Compact Header -->
+                                <div class="showcase-header">
+                                    <div class="service-icon-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                            <path d="M8 2v4" />
+                                            <path d="M16 2v4" />
+                                            <rect width="18" height="18" x="3" y="4" rx="2" />
+                                            <path d="M3 10h18" />
+                                        </svg>
+                                    </div>
+                                    <span class="showcase-popular-badge">Populaire</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-foreground mb-1">Accompagnement "Sérénité"</h3>
+                                <p class="text-sm text-muted-foreground mb-4">Le Parcours</p>
+                                <div class="flex items-baseline gap-3 mb-4">
+                                    <span class="text-3xl font-serif font-bold text-primary">Forfait 300€</span>
+                                    <span class="text-sm text-muted-foreground">· 5 séances</span>
+                                </div>
+                                <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Un parcours
+                                    sur-mesure pour intégrer durablement les bienfaits de la sophrologie dans votre vie.
+                                </p>
+
+                                <!-- Expandable Details -->
+                                <div class="showcase-details">
+                                    <div class="showcase-details-inner">
+                                        <p class="text-muted-foreground leading-relaxed text-sm mb-5">Idéal pour un
+                                            travail en profondeur sur la gestion du stress, le sommeil, la confiance en
+                                            soi ou la préparation à un événement. Nous avançons à votre rythme pour vous
+                                            rendre autonome dans votre pratique.</p>
+                                        <ul class="space-y-2.5">
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Cinq
+                                                    séances d'une heure, espacées de une à deux semaines</span></li>
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Un
+                                                    protocole personnalisé évoluant au fil de vos progrès</span></li>
+                                            <li class="service-feature"><span
+                                                    class="feature-dot"></span><span>L'apprentissage de techniques
+                                                    variées (respiration, visualisation, détente musculaire)</span></li>
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Des
+                                                    enregistrements audio des pratiques pour vous entraîner entre les
+                                                    séances</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Toggle + CTA -->
+                                <button class="showcase-toggle" aria-expanded="false">
+                                    <span class="showcase-toggle-text">En savoir plus</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="showcase-toggle-icon">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Commencer mon
+                                    parcours</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Pause Sophro -->
+                        <div class="showcase-card reveal-card">
+                            <div class="showcase-card-inner">
+                                <!-- Compact Header -->
+                                <div class="showcase-header">
+                                    <div class="service-icon-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                            <circle cx="9" cy="7" r="4" />
+                                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-baseline gap-3">
+                                        <span class="text-3xl font-serif font-bold text-primary">Sur Devis</span>
+                                        <span class="text-sm text-muted-foreground">· Variable</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-foreground mb-1">Atelier "Pause Sophro"</h3>
+                                <p class="text-sm text-muted-foreground mb-4">En Entreprise</p>
+                                <p class="text-muted-foreground leading-relaxed text-sm showcase-intro">Proposez à vos
+                                    équipes une bulle de décompression pour mieux gérer le stress et améliorer leur
+                                    concentration.</p>
+
+                                <!-- Expandable Details -->
+                                <div class="showcase-details">
+                                    <div class="showcase-details-inner">
+                                        <p class="text-muted-foreground leading-relaxed text-sm mb-5">Des ateliers
+                                            collectifs sur-mesure (gestion du stress, cohésion, prise de parole) pour
+                                            favoriser le bien-être et la performance au travail.</p>
+                                        <ul class="space-y-2.5">
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Format
+                                                    adaptable : de 1h à une demi-journée</span></li>
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Ateliers
+                                                    pratiques et interactifs</span></li>
+                                            <li class="service-feature"><span class="feature-dot"></span><span>Outils
+                                                    directement applicables dans l'environnement professionnel</span>
+                                            </li>
+                                            <li class="service-feature"><span
+                                                    class="feature-dot"></span><span>Intervention sur site ou en
+                                                    visio</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Toggle + CTA -->
+                                <button class="showcase-toggle" aria-expanded="false">
+                                    <span class="showcase-toggle-text">En savoir plus</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="showcase-toggle-icon">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <a href="#contact" class="btn-primary w-full text-sm py-2.5 mt-4">Demander un devis</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
-                    <div class="contact-card reveal-left">
-                        <div class="p-6 lg:p-8">
-                            <h3 class="font-serif text-2xl font-semibold text-foreground mb-6">Envoyez-moi un message</h3>
-                            <form class="space-y-5">
-                                <div><label for="firstName" class="text-sm font-medium text-foreground mb-2 block">Prénom *</label><input id="firstName" name="firstName" required class="form-input" placeholder="Votre prénom"></div>
-                                <div><label for="email" class="text-sm font-medium text-foreground mb-2 block">Email *</label><input type="email" id="email" name="email" required class="form-input" placeholder="votre@email.com"></div>
-                                <div><label for="message" class="text-sm font-medium text-foreground mb-2 block">Votre message *</label><textarea id="message" name="message" rows="5" required class="form-input resize-none" placeholder="Comment puis-je vous aider ?"></textarea></div>
-                                <button type="submit" class="btn-primary w-full py-3 text-sm">Envoyer le message <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 inline-block align-middle"><path d="m22 2-7 20-4-9-9-4Z"/><path d="m22 2-11 11"/></svg></button>
-                            </form>
+            </section>
+
+            <!-- APPROACH -->
+            <section id="approach" class="py-20 md:py-28 approach-section overflow-hidden relative">
+                <div class="section-grain"></div>
+                <div class="container mx-auto px-5 relative">
+                    <div class="text-center mb-16 md:mb-20 reveal-up">
+                        <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Mon
+                            Approche</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Comment
+                            je vous accompagne,<br><span class="text-primary">pas à pas</span></h2>
+                        <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Chaque accompagnement
+                            est unique, car vous êtes unique. Cependant, pour que vous vous sentiez en parfaite
+                            sécurité, nos rencontres suivent un cadre bienveillant et structuré. Voici les grandes
+                            étapes de notre chemin ensemble.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
+                        <div class="hidden md:block absolute top-24 left-[20%] right-[20%] h-px approach-line"></div>
+                        <div class="approach-card reveal-card">
+                            <div class="relative z-10 text-center">
+                                <div class="relative w-20 h-20 mx-auto mb-6">
+                                    <div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div>
+                                    <div
+                                        class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" />
+                                            <path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" />
+                                        </svg></div>
+                                    <div
+                                        class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
+                                        1</div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-foreground mb-4">Un Temps d'Écoute &amp; de Clarté
+                                </h3>
+                                <p class="text-muted-foreground leading-relaxed text-sm">Notre séance débute toujours
+                                    par un échange confidentiel pour que vous puissiez déposer ce qui est présent pour
+                                    vous. Cet instant précieux nous permet de définir ensemble l'intention de notre
+                                    rencontre et d'ajuster la pratique à vos besoins du moment.</p>
+                            </div>
+                        </div>
+                        <div class="approach-card reveal-card">
+                            <div class="relative z-10 text-center">
+                                <div class="relative w-20 h-20 mx-auto mb-6">
+                                    <div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div>
+                                    <div
+                                        class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg></div>
+                                    <div
+                                        class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
+                                        2</div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-foreground mb-4">Le Cœur de la Pratique Guidée
+                                </h3>
+                                <p class="text-muted-foreground leading-relaxed text-sm">Confortablement installée, je
+                                    vous guide par ma voix à travers des exercices de respiration, de détente musculaire
+                                    et de visualisation positive. Vous n'avez rien à "réussir", simplement à vous
+                                    laisser porter et à accueillir vos ressentis, en toute sécurité.</p>
+                            </div>
+                        </div>
+                        <div class="approach-card reveal-card">
+                            <div class="relative z-10 text-center">
+                                <div class="relative w-20 h-20 mx-auto mb-6">
+                                    <div class="absolute inset-0 bg-primary/10 rounded-2xl rotate-6"></div>
+                                    <div
+                                        class="relative w-full h-full approach-icon-wrap rounded-2xl flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                                            <path d="M9 18h6" />
+                                            <path d="M10 22h4" />
+                                        </svg></div>
+                                    <div
+                                        class="absolute -top-2 -right-2 w-8 h-8 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
+                                        3</div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-foreground mb-4">L'Intégration &amp; Vos Outils
+                                    pour Demain</h3>
+                                <p class="text-muted-foreground leading-relaxed text-sm">Nous terminons par un court
+                                    partage pour intégrer les bienfaits de la séance. L'objectif est que vous repartiez
+                                    non seulement apaisée, mais aussi avec une ou deux clés concrètes à intégrer
+                                    facilement dans votre quotidien pour cultiver cet état de bien-être.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="space-y-6 reveal-right">
-                        <div class="contact-card">
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS — ocean colored section -->
+            <section id="testimonials" class="testimonials-section py-20 md:py-28 overflow-hidden relative">
+                <div class="container mx-auto px-5 relative z-10">
+                    <div class="text-center mb-16 md:mb-20 reveal-up">
+                        <span
+                            class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Témoignages</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Ce
+                            qu'elles <span class="text-primary">en disent</span></h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                        <div class="testimonial-card reveal-card">
+                            <div class="testimonial-accent"></div>
                             <div class="p-6 lg:p-8">
-                                <h3 class="font-serif text-xl font-semibold text-foreground mb-5">Coordonnées directes</h3>
-                                <div class="space-y-4">
-                                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></div><span class="text-muted-foreground text-sm">25 Rue de la Sérénité, 69006 Lyon</span></div>
-                                    <a href="tel:0612345678" class="flex items-center gap-3 group"><div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><span class="text-muted-foreground text-sm group-hover:text-primary transition-colors">06 12 34 56 78</span></a>
-                                    <a href="/cdn-cgi/l/email-protection#d2bab7beb7bcb792a1bda2baa0bdbebdb5bbb7ffb7a3a7bbbebbb0a0b7fcb4a0" class="flex items-center gap-3 group"><div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div><span class="text-muted-foreground text-sm group-hover:text-primary transition-colors"><span class="__cf_email__" data-cfemail="c2aaa7aea7aca782b1adb2aab0adaeada5aba7efa7b3b7abaeaba0b0a7eca4b0"><span class="__cf_email__" data-cfemail="48202d242d262d662c3d2a27213b663b2738203a27082d25292124662b2725">[email&#160;protected]</span></span></span></a>
-                                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="text-muted-foreground text-sm">Sur rendez-vous, du Lundi au Vendredi de 9h à 19h</span></div>
+                                <div class="flex gap-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg></div>
+                                <blockquote class="text-muted-foreground leading-relaxed mb-6 text-[0.95rem]">"Avant de
+                                    rencontrer Hélène, j'étais constamment submergée par le stress de mon travail de
+                                    manager. J'étais épuisée et à fleur de peau. Dès la première séance, sa douceur et
+                                    son écoute sans jugement m'ont mise en confiance. Aujourd'hui, après quelques
+                                    séances, j'ai une véritable boîte à outils pour gérer la pression au quotidien. Je
+                                    dors mieux et j'aborde mes journées avec beaucoup plus de sérénité. C'est un vrai
+                                    changement."</blockquote>
+                                <div class="flex items-center gap-4 pt-5 border-t border-border/60">
+                                    <div
+                                        class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="text-primary font-serif font-bold text-lg">C</span></div>
+                                    <div>
+                                        <p class="font-semibold text-foreground text-sm">Claire S.</p>
+                                        <p class="text-xs text-muted-foreground">Manager à Lyon, Accompagnement Gestion
+                                            du Stress</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-card overflow-hidden">
-                            <div class="p-6 lg:p-8 pb-4">
-                                <h3 class="font-serif text-xl font-semibold text-foreground mb-2">Informations d'accès</h3>
-                                <p class="text-sm text-muted-foreground mb-4">Lyon 6ème — Quartier Foch</p>
+                        <div class="testimonial-card reveal-card">
+                            <div class="testimonial-accent"></div>
+                            <div class="p-6 lg:p-8">
+                                <div class="flex gap-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg></div>
+                                <blockquote class="text-muted-foreground leading-relaxed mb-6 text-[0.95rem]">"Jeune
+                                    entrepreneure, l'anxiété de la performance me paralysait. Hélène m'a appris à me
+                                    reconnecter à mes ressources intérieures. Ses visualisations m'ont aidée à regagner
+                                    confiance en moi avant des présentations importantes. Son approche pragmatique et sa
+                                    propre expérience du monde de l'entreprise ont été un vrai plus. Je me sens beaucoup
+                                    plus solide et alignée."</blockquote>
+                                <div class="flex items-center gap-4 pt-5 border-t border-border/60">
+                                    <div
+                                        class="w-11 h-11 rounded-full bg-sage/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="text-sage font-serif font-bold text-lg">M</span></div>
+                                    <div>
+                                        <p class="font-semibold text-foreground text-sm">Manon L.</p>
+                                        <p class="text-xs text-muted-foreground">Entrepreneure en visio, Accompagnement
+                                            Confiance en Soi</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="map-container">
-                                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=4.8400%2C45.7660%2C4.8600%2C45.7740&layer=mapnik&marker=45.7700%2C4.8500" width="100%" height="250" style="border:0;" loading="lazy" title="Localisation du cabinet"></iframe>
-                            </div>
-                            <div class="px-6 lg:px-8 py-4">
-                                <div class="flex items-start gap-3 text-sm text-muted-foreground">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mt-0.5 flex-shrink-0"><rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/></svg>
-                                    <span>Métro Ligne A, arrêt 'Foch' (4 min à pied) · Bus C4, arrêt 'Edgar Quinet' · Stationnement dans la rue ou Parking 'Morand' à 300m · 3ème étage avec ascenseur, interphone 'DUBOIS' · Accessible PMR</span>
+                        </div>
+                        <div class="testimonial-card reveal-card">
+                            <div class="testimonial-accent"></div>
+                            <div class="p-6 lg:p-8">
+                                <div class="flex gap-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="#f59e0b" stroke="none">
+                                        <path
+                                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg></div>
+                                <blockquote class="text-muted-foreground leading-relaxed mb-6 text-[0.95rem]">"La charge
+                                    mentale était devenue insupportable. J'avais l'impression d'être une cocotte-minute
+                                    sur le point d'exploser. Grâce à l'accompagnement d'Hélène, j'ai appris à créer des
+                                    'bulles de décompression' dans mes journées. Elle m'a donné des clés simples et
+                                    efficaces pour ne plus me laisser déborder. C'est un immense soulagement."
+                                </blockquote>
+                                <div class="flex items-center gap-4 pt-5 border-t border-border/60">
+                                    <div
+                                        class="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="text-primary font-serif font-bold text-lg">S</span></div>
+                                    <div>
+                                        <p class="font-semibold text-foreground text-sm">Sophie T.</p>
+                                        <p class="text-xs text-muted-foreground">Mère de famille et salariée,
+                                            Accompagnement Charge Mentale</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- FLOATING CTA (mobile) -->
-    <div id="floating-cta" class="floating-cta">
-        <div class="container mx-auto px-5">
-            <a href="#reservation" class="btn-primary w-full py-3 text-sm shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
-                Réserver mon appel découverte gratuit
-            </a>
+            <!-- FAQ -->
+            <section id="faq" class="py-20 md:py-28 overflow-hidden">
+                <div class="container mx-auto px-5">
+                    <div class="text-center mb-16 md:mb-20 reveal-up">
+                        <span class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">FAQ</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Vos
+                            Questions,<br>Mes <span class="text-primary">Réponses</span></h2>
+                    </div>
+                    <div class="max-w-3xl mx-auto">
+                        <div id="accordion-container" class="space-y-3">
+                            <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span
+                                        class="flex-1 text-left">Je n'ai jamais fait de sophrologie, est-ce que c'est
+                                        pour moi ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="accordion-chevron flex-shrink-0 ml-4">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg></button>
+                                <div class="accordion-content">
+                                    <p>Absolument ! La plupart des personnes que j'accompagne découvrent la sophrologie
+                                        pour la première fois. Il n'y a aucun prérequis. Mon rôle est de vous guider
+                                        avec douceur et à votre rythme, dans un cadre bienveillant. Chaque séance est
+                                        une invitation à la découverte de soi, pas une performance.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span
+                                        class="flex-1 text-left">Combien de séances faut-il prévoir pour ressentir des
+                                        bienfaits ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="accordion-chevron flex-shrink-0 ml-4">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg></button>
+                                <div class="accordion-content">
+                                    <p>Chaque parcours est unique, mais des bienfaits comme une sensation de détente
+                                        profonde peuvent être ressentis dès la première séance. Pour un changement
+                                        durable, on considère qu'un accompagnement de 5 à 8 séances permet d'intégrer
+                                        les outils en profondeur. Nous ferons le point ensemble à chaque étape.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span
+                                        class="flex-1 text-left">La sophrologie remplace-t-elle un suivi médical ou
+                                        psychologique ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="accordion-chevron flex-shrink-0 ml-4">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg></button>
+                                <div class="accordion-content">
+                                    <p>C'est une excellente question. Mon approche est une technique complémentaire qui
+                                        vise le bien-être. Elle ne se substitue en aucun cas à un diagnostic ou à un
+                                        traitement médical. Je travaille en bonne intelligence avec le corps médical et
+                                        je vous encouragerai toujours à consulter votre médecin ou un psychologue pour
+                                        toute question de santé.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item reveal-faq"><button class="accordion-trigger"><span
+                                        class="flex-1 text-left">Proposez-vous des séances en visio ? Sont-elles aussi
+                                        efficaces ?</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="accordion-chevron flex-shrink-0 ml-4">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg></button>
+                                <div class="accordion-content">
+                                    <p>Oui, je propose toutes mes séances en visio. L'efficacité est la même, car la
+                                        sophrologie repose sur le guidage par la voix. Il vous suffit d'avoir une bonne
+                                        connexion internet et un endroit calme où vous ne serez pas dérangée, avec des
+                                        écouteurs pour une immersion optimale. Cela offre une grande flexibilité.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESERVATION — gradient section -->
+            <section id="reservation" class="reservation-section py-20 md:py-28 overflow-hidden relative">
+                <div class="reservation-bg"></div>
+                <div class="container mx-auto px-5 relative z-10">
+                    <div class="text-center mb-16 md:mb-20 reveal-up">
+                        <span
+                            class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Réservation</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Prête à
+                            faire le<br><span class="text-primary">premier pas</span> ?</h2>
+                        <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Réservez un appel
+                            découverte gratuit de 15 minutes. C'est l'occasion idéale pour échanger en toute confiance,
+                            sans engagement, et voir si nous sommes faites pour cheminer ensemble.</p>
+                    </div>
+                    <div class="max-w-5xl mx-auto reveal-up">
+                        <div class="calendly-widget">
+                            <div class="calendly-badge"><span
+                                    class="text-[10px] text-muted-foreground tracking-wide uppercase">Alimenté
+                                    par</span><span class="text-xs font-bold text-foreground ml-1">Calendly</span></div>
+                            <div class="grid lg:grid-cols-5">
+                                <div
+                                    class="lg:col-span-2 p-6 md:p-8 border-b lg:border-b-0 lg:border-r border-border/60">
+                                    <img loading="lazy" src="images/about-portrait-helene.webp" alt="Hélène Dubois"
+                                        class="w-16 h-16 rounded-full object-cover mb-4 ring-2 ring-primary/10 ring-offset-2">
+                                    <p class="text-muted-foreground text-sm">Hélène Dubois</p>
+                                    <h3 class="text-xl font-bold text-foreground mb-3">Appel Découverte (15 min)</h3>
+                                    <div class="flex items-center gap-4 text-muted-foreground text-sm mb-6">
+                                        <span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <polyline points="12 6 12 12 16 14" />
+                                            </svg>15 min</span>
+                                        <span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="M15 10l5 5-5 5" />
+                                                <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                                            </svg>Gratuit</span>
+                                    </div>
+                                    <p class="text-muted-foreground text-sm leading-relaxed mb-6">Cet appel gratuit est
+                                        une première étape pour échanger sur votre situation et voir comment la
+                                        sophrologie peut vous aider à retrouver calme et clarté.</p>
+                                    <h4 class="font-semibold text-foreground mb-3 text-sm">Objectif :</h4>
+                                    <div class="space-y-3 text-sm mb-6">
+                                        <div class="flex items-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="text-sage mt-0.5 flex-shrink-0">
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                                <polyline points="22 4 12 14.01 9 11.01" />
+                                            </svg><span class="text-muted-foreground">Discuter de vos besoins et de vos
+                                                objectifs de bien-être.</span></div>
+                                        <div class="flex items-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="text-sage mt-0.5 flex-shrink-0">
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                                <polyline points="22 4 12 14.01 9 11.01" />
+                                            </svg><span class="text-muted-foreground">Répondre à vos questions sur la
+                                                sophrologie et mon approche.</span></div>
+                                        <div class="flex items-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="text-sage mt-0.5 flex-shrink-0">
+                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                                <polyline points="22 4 12 14.01 9 11.01" />
+                                            </svg><span class="text-muted-foreground">Valider ensemble si mon
+                                                accompagnement est la bonne solution pour vous.</span></div>
+                                    </div>
+                                    <p class="text-muted-foreground text-sm leading-relaxed mb-6">C'est un échange
+                                        simple, concret et sans aucun engagement.</p>
+                                </div>
+                                <div class="lg:col-span-3 p-6 md:p-8">
+                                    <h4 class="text-base font-semibold text-foreground mb-5">Sélectionnez la date et
+                                        l'heure</h4>
+                                    <div class="flex items-center justify-between mb-4">
+                                        <button id="cal-prev" class="cal-nav-btn" aria-label="Mois précédent"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="m15 18-6-6 6-6" />
+                                            </svg></button>
+                                        <span id="cal-month-label" class="font-semibold text-foreground text-sm"></span>
+                                        <button id="cal-next" class="cal-nav-btn" aria-label="Mois suivant"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="m9 18 6-6-6-6" />
+                                            </svg></button>
+                                    </div>
+                                    <div class="grid grid-cols-7 gap-y-1 text-center text-sm mb-1">
+                                        <div class="cal-day-header">LUN</div>
+                                        <div class="cal-day-header">MAR</div>
+                                        <div class="cal-day-header">MER</div>
+                                        <div class="cal-day-header">JEU</div>
+                                        <div class="cal-day-header">VEN</div>
+                                        <div class="cal-day-header">SAM</div>
+                                        <div class="cal-day-header">DIM</div>
+                                    </div>
+                                    <div id="calendar-days" class="grid grid-cols-7 gap-y-1 text-center text-sm"></div>
+                                    <div id="time-slots-container" class="hidden mt-6 pt-5 border-t border-border/60">
+                                        <h5 class="text-sm font-semibold text-foreground mb-3" id="selected-date-label">
+                                        </h5>
+                                        <div id="time-slots" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div>
+                                    </div>
+                                    <div class="mt-6 pt-4 border-t border-border/40">
+                                        <div class="flex items-center gap-2 text-muted-foreground text-xs"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <line x1="2" y1="12" x2="22" y2="12" />
+                                                <path
+                                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                            </svg><span>Heure de l'Europe centrale (Paris)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="py-20 md:py-28 bg-warm overflow-hidden relative">
+                <div class="section-grain"></div>
+                <div class="container mx-auto px-5 relative">
+                    <div class="text-center mb-16 md:mb-20 reveal-up">
+                        <span
+                            class="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">Contact</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+                            Échangeons <span class="text-primary">ensemble</span></h2>
+                        <p class="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">Vous avez une
+                            question ? Vous souhaitez simplement échanger avant de prendre rendez-vous ? N'hésitez pas à
+                            utiliser le moyen de contact qui vous convient le mieux. Je me ferai un plaisir de vous
+                            répondre avec attention.</p>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                        <div class="contact-card reveal-left">
+                            <div class="p-6 lg:p-8">
+                                <h3 class="font-serif text-2xl font-semibold text-foreground mb-6">Envoyez-moi un
+                                    message</h3>
+                                <form class="space-y-5">
+                                    <div><label for="firstName"
+                                            class="text-sm font-medium text-foreground mb-2 block">Prénom
+                                            *</label><input id="firstName" name="firstName" required class="form-input"
+                                            placeholder="Votre prénom"></div>
+                                    <div><label for="email" class="text-sm font-medium text-foreground mb-2 block">Email
+                                            *</label><input type="email" id="email" name="email" required
+                                            class="form-input" placeholder="votre@email.com"></div>
+                                    <div><label for="message"
+                                            class="text-sm font-medium text-foreground mb-2 block">Votre message
+                                            *</label><textarea id="message" name="message" rows="5" required
+                                            class="form-input resize-none"
+                                            placeholder="Comment puis-je vous aider ?"></textarea></div>
+                                    <button type="submit" class="btn-primary w-full py-3 text-sm">Envoyer le message
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="ml-2 inline-block align-middle">
+                                            <path d="m22 2-7 20-4-9-9-4Z" />
+                                            <path d="m22 2-11 11" />
+                                        </svg></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="space-y-6 reveal-right">
+                            <div class="contact-card">
+                                <div class="p-6 lg:p-8">
+                                    <h3 class="font-serif text-xl font-semibold text-foreground mb-5">Coordonnées
+                                        directes</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center gap-3">
+                                            <div
+                                                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="text-primary">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg></div><span class="text-muted-foreground text-sm">25 Rue de la
+                                                Sérénité, 69006 Lyon</span>
+                                        </div>
+                                        <a href="tel:0612345678" class="flex items-center gap-3 group">
+                                            <div
+                                                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="text-primary">
+                                                    <path
+                                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                                </svg></div><span
+                                                class="text-muted-foreground text-sm group-hover:text-primary transition-colors">06
+                                                12 34 56 78</span>
+                                        </a>
+                                        <a href="/cdn-cgi/l/email-protection#d2bab7beb7bcb792a1bda2baa0bdbebdb5bbb7ffb7a3a7bbbebbb0a0b7fcb4a0"
+                                            class="flex items-center gap-3 group">
+                                            <div
+                                                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="text-primary">
+                                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                                </svg></div><span
+                                                class="text-muted-foreground text-sm group-hover:text-primary transition-colors"><span
+                                                    class="__cf_email__"
+                                                    data-cfemail="c2aaa7aea7aca782b1adb2aab0adaeada5aba7efa7b3b7abaeaba0b0a7eca4b0"><span
+                                                        class="__cf_email__"
+                                                        data-cfemail="48202d242d262d662c3d2a27213b663b2738203a27082d25292124662b2725">[email&#160;protected]</span></span></span>
+                                        </a>
+                                        <div class="flex items-center gap-3">
+                                            <div
+                                                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="text-primary">
+                                                    <circle cx="12" cy="12" r="10" />
+                                                    <polyline points="12 6 12 12 16 14" />
+                                                </svg></div><span class="text-muted-foreground text-sm">Sur rendez-vous,
+                                                du Lundi au Vendredi de 9h à 19h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-card overflow-hidden">
+                                <div class="p-6 lg:p-8 pb-4">
+                                    <h3 class="font-serif text-xl font-semibold text-foreground mb-2">Informations
+                                        d'accès</h3>
+                                    <p class="text-sm text-muted-foreground mb-4">Lyon 6ème — Quartier Foch</p>
+                                </div>
+                                <div class="map-container">
+                                    <iframe
+                                        src="https://www.openstreetmap.org/export/embed.html?bbox=4.8400%2C45.7660%2C4.8600%2C45.7740&layer=mapnik&marker=45.7700%2C4.8500"
+                                        width="100%" height="250" style="border:0;" loading="lazy"
+                                        title="Localisation du cabinet"></iframe>
+                                </div>
+                                <div class="px-6 lg:px-8 py-4">
+                                    <div class="flex items-start gap-3 text-sm text-muted-foreground">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-primary mt-0.5 flex-shrink-0">
+                                            <rect width="16" height="16" x="4" y="3" rx="2" />
+                                            <path d="M4 11h16" />
+                                            <path d="M12 3v8" />
+                                        </svg>
+                                        <span>Métro Ligne A, arrêt 'Foch' (4 min à pied) · Bus C4, arrêt 'Edgar Quinet'
+                                            · Stationnement dans la rue ou Parking 'Morand' à 300m · 3ème étage avec
+                                            ascenseur, interphone 'DUBOIS' · Accessible PMR</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FLOATING CTA (mobile) -->
+        <div id="floating-cta" class="floating-cta">
+            <div class="container mx-auto px-5">
+                <a href="#reservation" class="btn-primary w-full py-3 text-sm shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mr-2">
+                        <path d="M8 2v4" />
+                        <path d="M16 2v4" />
+                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                        <path d="M3 10h18" />
+                    </svg>
+                    Réserver mon appel découverte gratuit
+                </a>
+            </div>
         </div>
+
+        <!-- FOOTER -->
+        <footer class="bg-foreground text-white/90 pb-24 lg:pb-0">
+            <div class="container mx-auto px-5 sm:px-6 lg:px-8 py-14">
+                <div class="grid md:grid-cols-3 gap-10 text-center md:text-left">
+                    <div>
+                        <div class="flex items-center gap-2 justify-center md:justify-start mb-4">
+                            <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center"><span
+                                    class="text-white font-serif font-bold">H</span></div><span
+                                class="font-serif text-lg font-semibold">Hélène Dubois</span>
+                        </div>
+                        <p class="text-white/60 text-sm leading-relaxed">Sophrologue certifiée à Lyon<br>Accompagnement
+                            bienveillant pour retrouver votre sérénité</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4 text-sm tracking-wide uppercase">Contact</h4>
+                        <div class="space-y-2.5 text-sm text-white/60">
+                            <div class="flex items-center justify-center md:justify-start gap-2.5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" class="text-white/40">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg><span>06 12 34 56 78</span></div>
+                            <div class="flex items-center justify-center md:justify-start gap-2.5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" class="text-white/40">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                        data-cfemail="e58d8089808b80a5968a958d978a898a828c80c88094908c898c879780cb8397"><span
+                                            class="__cf_email__"
+                                            data-cfemail="4e262b222b202b602a3b2c21273d603d213e263c210e2b232f2722602d2123">[email&#160;protected]</span></a></span>
+                            </div>
+                            <div class="flex items-center justify-center md:justify-start gap-2.5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" class="text-white/40">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg><span>25 Rue de la Sérénité, 69006 Lyon</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4 text-sm tracking-wide uppercase">Horaires</h4>
+                        <div class="text-sm text-white/60 space-y-1">
+                            <p>Sur rendez-vous</p>
+                            <p>Lundi au Vendredi</p>
+                            <p>9h – 19h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-white/10 mt-10 pt-8 text-center text-xs text-white/40">
+                    <p>&copy; 2024 Hélène Dubois — Sophrologie &amp; Équilibre. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="bg-foreground text-white/90 pb-24 lg:pb-0">
-        <div class="container mx-auto px-5 sm:px-6 lg:px-8 py-14">
-            <div class="grid md:grid-cols-3 gap-10 text-center md:text-left">
-                <div>
-                    <div class="flex items-center gap-2 justify-center md:justify-start mb-4"><div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center"><span class="text-white font-serif font-bold">H</span></div><span class="font-serif text-lg font-semibold">Hélène Dubois</span></div>
-                    <p class="text-white/60 text-sm leading-relaxed">Sophrologue certifiée à Lyon<br>Accompagnement bienveillant pour retrouver votre sérénité</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4 text-sm tracking-wide uppercase">Contact</h4>
-                    <div class="space-y-2.5 text-sm text-white/60">
-                        <div class="flex items-center justify-center md:justify-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-white/40"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>06 12 34 56 78</span></div>
-                        <div class="flex items-center justify-center md:justify-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-white/40"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e58d8089808b80a5968a958d978a898a828c80c88094908c898c879780cb8397"><span class="__cf_email__" data-cfemail="4e262b222b202b602a3b2c21273d603d213e263c210e2b232f2722602d2123">[email&#160;protected]</span></a></span></div>
-                        <div class="flex items-center justify-center md:justify-start gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-white/40"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>25 Rue de la Sérénité, 69006 Lyon</span></div>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4 text-sm tracking-wide uppercase">Horaires</h4>
-                    <div class="text-sm text-white/60 space-y-1"><p>Sur rendez-vous</p><p>Lundi au Vendredi</p><p>9h – 19h</p></div>
-                </div>
-            </div>
-            <div class="border-t border-white/10 mt-10 pt-8 text-center text-xs text-white/40"><p>&copy; 2024 Hélène Dubois — Sophrologie &amp; Équilibre. Tous droits réservés.</p></div>
-        </div>
-    </footer>
-</div>
-<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
